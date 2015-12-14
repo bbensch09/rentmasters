@@ -5,7 +5,7 @@ belongs_to :market_rent
 validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :bathrooms, :condition, :current_rent,
   presence: true
 
-attr_accessor :estimate, :low_estimate, :high_estimate, :key
+attr_accessor :estimate, :low_estimate, :high_estimate
 
   def estimate
       # self.estimate = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
@@ -15,7 +15,6 @@ attr_accessor :estimate, :low_estimate, :high_estimate, :key
       current_annual = self.current_rent * 12
       cash_flow_delta2 = (market_annual - current_annual)*2
       self.estimate = cash_flow_delta2.to_i / 1000 * 1000
-
   end
 
   def low_estimate
@@ -25,11 +24,6 @@ attr_accessor :estimate, :low_estimate, :high_estimate, :key
   def high_estimate
         self.high_estimate = (self.estimate * 1.25) / 1000 * 1000
   end
-
-  # def key
-  #   self.key = "#{neighborhood}>#{bedrooms}"
-  # end
-
 
 def self.bathroom_options
   @bathroom_options = ['limited bathrooms (i.e. 1 bath for 4 people)',
