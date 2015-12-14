@@ -1,0 +1,23 @@
+class Quote < ActiveRecord::Base
+
+validates  :first_name, :last_name, :email, :neighborhood, :num_bedrooms, :bathrooms, :condition, :current_rent,
+  presence: true
+
+# before_save :estimate
+
+attr_accessor :first_name, :last_name, :email, :neighborhood, :num_bedrooms, :bathrooms, :condition, :current_rent, :estimate
+
+
+
+  # def estimate
+  #       self.estimate = "PLACEHOLDER"
+  # end
+
+end
+
+# class CalculatorController < ApplicationController
+#   def get_estimate
+#     @result = Calculator.send(params[:id])
+#     redirect_to @quote
+#   end
+# end

@@ -1,0 +1,23 @@
+<h1>Update Market Data </h1>
+<%= form_tag import_market_rents_path,  multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import CSV" %>
+<% end %>
+
+<% @market_rents = MarketRent.order('id DESC') %>
+  <div class="main-section col-12">
+<table>
+  <tr>
+    <td>Neighborhood</td>
+    <td>Bedrooms</td>
+    <td>Market Rent</td>
+  </tr>
+  <% @market_rents.each do |row| %>
+  <tr>
+
+       <td> <%= row[:neighborhood] %> </td>
+       <td> <%= row[:bedrooms] %> </td>
+       <td> <%= row[:market_rent] %> </td>
+  </tr>
+  <% end %>
+</table>

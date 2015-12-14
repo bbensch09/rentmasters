@@ -1,0 +1,55 @@
+<h1>New Quote </h1>
+
+<%= form_for @quote, multipart:true do |f| %>
+
+  <% if @quote.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <span class="errors">
+          <%= pluralize(@quote.errors.count, "error") %>
+        </span> prohibited this quote from being saved:
+      </h2>
+      <ul>
+        <% @quote.errors.full_messages.each do |msg| %>
+          <li class="errors"><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<section class="new-quote-form">
+
+  <p>
+    <%= f.label :first_name, "First Name", :class=>"edit-label" %>
+    <%= f.text_area :first_name, size:"35x1" %> <br>
+    <%= f.label :last_name, "Last Name", :class=>"edit-label" %>
+    <%= f.text_area :last_name, size:"35x1" %> <br>
+    <%= f.label :email, "Email Address", :class=>"edit-label" %>
+    <%= f.text_area :email, size:"35x1" %> <br>
+  </p>
+
+  <p>
+    <%= f.label :neighborhood, "Neighborhood", :class=>"edit-label"  %>
+    <%= f.select :neighborhood, options_for_select(MarketRent.neighborhood_options, @quote.neighborhood) %>
+  </p>
+ <p>
+  <%= f.label :bedrooms, "Number of Bedrooms:", :class=>"edit-label"  %>
+  <%= f.select :bedrooms, options_for_select(MarketRent.bedrooms_options, @quote.bedrooms) %>
+</p>
+  <br>
+    <%= f.label :bathrooms, "Number of bathrooms:", :class=>"edit-label"  %>
+    <%= f.select :bathrooms, options_for_select(Quote.bathroom_options, @quote.bathrooms) %>
+    <br>
+    <%= f.label :condition, "What condition is the apartment in?", :class=>"edit-label"  %>
+    <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition) %>
+    <br>
+    <%= f.label :current_rent, "How much do you currently pay in monthly rent?", :class=>"edit-label" %>
+    <%= f.text_area :current_rent, size:"35x1" %> <br>
+  </p>
+
+
+  <div>
+    <%= f.submit 'Request Your Estimate', :class=>"button" %>
+  </div>
+</section>
+<% end %>

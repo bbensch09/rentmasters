@@ -1,0 +1,22 @@
+<section>
+  <h1>
+    Your customized Rent Masters estimate:
+  </h1>
+  <h3> Based on the apartment details entered below, the estimated fair market value for your rent controlled apartment is:
+  </h3>
+  <p>
+      Your email:  <%= @quote.email %> <br>
+      Your current rent: $<%= @quote.current_rent %> <br>
+      Neighborhood: <%= @quote.neighborhood %> <br>
+      Bedrooms: <%= @quote.bedrooms %> <br>
+      Bathrooms: <%= @quote.bathrooms %> <br>
+  </p>
+  <hr>
+  <h2> Your FMV estimate = $<%= @quote.estimate %> <br>
+   Conservative estimate (fair negotiation without legal rep): $<%= @quote.low_estimate %> <br>
+   Aggressive estimate (excellent negotiation with premium legal services): $<%= @quote.high_estimate %> </p>
+  </h2>
+  <p>
+    Your rent masters estimate is based on a multiple dynamic factors, including but not limited to: the current rent contract, the comparable market rent for similar buildings, the current length of tenancy, and the reported condition of the premises. Rent Masters, LLC cannot guarantee the accuracy of your estimated Fair Market Value. Due to any number of factors, the final agreed upon price after negotiation between landlord and tenant could vary considerably.
+  </p>
+</section>
