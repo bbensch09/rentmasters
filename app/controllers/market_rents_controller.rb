@@ -1,4 +1,5 @@
 class MarketRentsController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "rmadmin", except: #[:new_quote]
 
   def import
    MarketRent.import(params[:file])
@@ -25,7 +26,6 @@ class MarketRentsController < ApplicationController
   # def update
   #  MarketRents.import(params[:file])
   # end
-
   def show
     @market_rent = MarketRent.find(params[:id])
     render 'index'
