@@ -5,15 +5,15 @@
     <h1>
       <%=@quote.first_name %>'s Rent Masters estimate:
     </h1>
-      <h3> Based on the apartment details entered below, we have estimated a range of fair market values for your rent controlled apartment.
-      </h3>
-      <ul>
-       <li> Your email:  <%= @quote.email %> </li>
-       <li>  Your current rent: $<%= @quote.current_rent %> </li>
-       <li>  Neighborhood: <%= @quote.neighborhood %> </li>
-       <li>  Bedrooms: <%= @quote.bedrooms %> </li>
-       <li>  Bathrooms: <%= @quote.bathrooms %> </li>
-     </ul>
+    <h3> Based on the apartment details entered below, we have estimated a range of fair market values for your rent controlled apartment.
+    </h3>
+    <ul>
+     <li> Your email:  <%= @quote.email %> </li>
+     <li>  Your current rent: $<%= @quote.current_rent %> </li>
+     <li>  Neighborhood: <%= @quote.neighborhood %> </li>
+     <li>  Bedrooms: <%= @quote.bedrooms %> </li>
+     <li>  Bathrooms: <%= @quote.bathrooms %> </li>
+   </ul>
 
    <hr>
 
@@ -28,6 +28,11 @@
      <h4> Aggressive estimate (excellent negotiation with premium legal services): <%= number_to_currency(@quote.high_estimate) %></h4>
    </li>
  </ul>
+
+ <h3> Ready to move forward?
+   <a href="mailto:rentmasters.sf@gmail.com" class="btn btn-hero">Sign me up</a>
+ </h3>
+
  <p>
   Your rent masters estimate is based on a multiple dynamic factors, including but not limited to: the current rent contract, the comparable market rent for similar buildings, the current length of tenancy, and the reported condition of the premises. Rent Masters, LLC cannot guarantee the accuracy of your estimated Fair Market Value. Due to any number of factors, the final agreed upon price after negotiation between landlord and tenant could vary considerably.
 </p>
