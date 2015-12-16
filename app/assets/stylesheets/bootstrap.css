@@ -3035,7 +3035,8 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #006CAF;
+  background-color: #ffffff;
+  color:#006CAF;
   text-decoration: none;
 }
 .btn:active,
@@ -6771,4 +6772,29 @@ color:red;
 }
 .indent {
   margin-left: 5%
+}
+.money{
+  color: #006CAF;
+}
+.btn-hero{
+  font-size: 2em;
+  color:#ffffff;
+  background-color: #006CAF;
+}
+/*.btn-hero a:hover, btn a:hover{
+  font-size: 2em;
+  color:#006CAF;
+  background-color: #ffffff;
+}*/
+.img-banner {
+  height: 250px;
+}
+.steps-how-it-works{
+  font-size: 1.2em;
+}
+/*.steps-detail {
+  font-size: 1em;
+}*/
+.button-request{
+  font-size: 2em;
 }
