@@ -12384,7 +12384,6 @@ Copyright (c) 2014 Daniel Eden
 
   /*ABout us*/
   .feature_content .btn-main{
-    bottom:20px;
     margin-bottom: 40px;
   }
 
@@ -12527,7 +12526,7 @@ Copyright (c) 2014 Daniel Eden
     margin-bottom: 40px;
   }
   
-  #how-it-works{
+  #service{
     padding-bottom: 0px;
     padding-top: 40px;
   }
@@ -12792,7 +12791,7 @@ a {
 
 .feature_sub {
     color: #000;
-    font-size: 1.5em;
+    font-size: 18px;
     line-height: 25px;
     font-weight: 400;
 }
@@ -12812,7 +12811,7 @@ a {
     /*height: 44px;*/
     text-transform: uppercase;
     margin-top: 60px;
-    background-color: #006caf;
+    background: #333;
     color: #fff;
     border: 1px solid#333;
 }
@@ -12835,7 +12834,7 @@ a {
     height: 5px;
 }
 
-#how-it-works,#pricing_table,#about,#team,#blog,#contact {
+#service,#pricing_table,#about,#team,#blog,#contact {
     padding: 80px 0px;
 }
 
@@ -13095,7 +13094,7 @@ ul.navbar-nav > .active > a {
 
 .button-subtext {
   color:white;
-
+  
 }
 
 .carousel-control.left,.carousel-control.right {
@@ -13204,7 +13203,7 @@ ul.navbar-nav > .active > a {
 }
 
 
- Service  Area
+/* Service  Area
 ============================================================= 
 
 .main_feature {
@@ -13223,10 +13222,10 @@ ul.navbar-nav > .active > a {
     cursor: pointer;
 }
 
-.feature_content_left {
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 1.3em;
+.feature_content i {
+    font-size: 60px;
+    line-height: 60px;
+    z-index: 3;
     position: relative;
     -webkit-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
@@ -13234,13 +13233,7 @@ ul.navbar-nav > .active > a {
     display: block;
 }
 
-.feature_steps {
-  font-size: 1.3em;
-  text-decoration: uppercase;
-  font-weight: bold;
-}
-
-.feature_content h4 {
+.feature_content h5 {
     font-size: 16px;
     font-weight: 800;
     line-height: 19px;
@@ -13269,7 +13262,7 @@ ul.navbar-nav > .active > a {
 }
 
 /* Portfolio Area
-=========================================== 
+=========================================== */
 #portfolio {
     background: #FBFAF8;
 }
@@ -15260,6 +15253,4 @@ textarea:hover {
 /*BRIANS CSS EDITS*/
 
 .cl-b {clear:both;}
-.vertical_space {
-  height: 200px;
-}
+
