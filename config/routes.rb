@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   get '/index' => 'welcome#index'
+  get '/index_copy' => 'welcome#index_copy'
   get '/market_rents' => 'market_rents#index'
 
   resources :quotes
