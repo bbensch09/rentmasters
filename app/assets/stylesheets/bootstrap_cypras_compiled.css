@@ -6468,7 +6468,7 @@ button.close {
 }
 
 .carousel {
-    position: relative
+    position: relative    
 }
 
 .carousel-inner {
@@ -6535,7 +6535,7 @@ button.close {
     width: 15%;
     opacity: .5;
     filter: alpha(opacity=50);
-    font-size: 20px;
+    font-size: 2em;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
@@ -6596,7 +6596,8 @@ button.close {
 }
 
 .carousel-control .icon-prev:before {
-    content: '\2039'
+    /*content: '\2039';*/
+    content: 'previous'
 }
 
 .carousel-control .icon-next:before {
@@ -13002,34 +13003,34 @@ ul.navbar-nav > .active > a {
     text-shadow: none!important;
     left: 9%;
     right: 10%;
-    -webkit-transition: all.3s ease 0s;
-    -o-transition: all.3s ease 0s;
-    transition: all.3s ease 0s;
+    -webkit-transition: all.1s ease 0s;
+    -o-transition: all.1s ease 0s;
+    transition: all.1s ease 0s;
     text-align: center;
 }
 
 .carousel-caption h3 {
     text-shadow: none;
-    font-size: 70px;
-    line-height: 92px;
+    font-size: 3em;
+    line-height: 1.5em;
     font-weight: 300;
     margin: 20px 0px;
-    transition-delay: .3s;
-    -webkit-transition-delay: .3s;
-    -o-transition-delay: .3s;
+    color:#fff;
+    transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+    -o-transition-delay: .1s;
     text-transform: capitalize!important;
 }
 
 .carousel-caption p {
-    font-size: 46px;
-    line-height: 62px;
+    font-size: 2em;
+    line-height: 1em;
     font-weight: 500;
     color: #fff;
-    transition-delay: .3s;
-    -moz-transition-delay: .3s;
-    -o-transition-delay: .3s;
+    transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    -o-transition-delay: .1s;
     margin: 40px 0px;
-    text-transform: uppercase;
 }
 
 .carousel-caption img {
@@ -13045,36 +13046,45 @@ ul.navbar-nav > .active > a {
 }
 
 .carousel-caption p i {
-    font-size: 7px;
+    font-size: 1em;
     margin: 0px 3px;
     position: relative;
     top: -3px;
 }
 
+.highlight {
+  color:#FF709C;
+  font-weight: 600;
+  text-decoration: uppercase;
+}
+
 .carousel .item {
-    -webkit-transition: opacity .3s;
-    -moz-transition: opacity .3s;
-    -ms-transition: opacity .3s;
-    -o-transition: opacity .3s;
-    transition: opacity .3s;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -ms-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    transition: opacity 300ms;
+    min-height: 400px;
 }
 
 .btn-featured {
     text-decoration: none;
     position: relative;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    background: transparent;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    /*background: transparent;*/
     border-radius: 2px;
     z-index: 1;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
+    font-weight: 600px;
+    font-size: 2em;
+    line-height: 2em;
     padding: 15px 40px !important;
     text-transform: uppercase;
     margin-top: 20px;
     margin-right: 10px;
+    background-color: #006CAF;
+    color: white;
 }
 
 .carousel-control.left,.carousel-control.right {
@@ -13118,7 +13128,7 @@ ul.navbar-nav > .active > a {
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    transition: all 500ms ease;
+    transition: all 100ms ease;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -13163,19 +13173,28 @@ ul.navbar-nav > .active > a {
 
 /*-- Animation --*/
 
+/*DO NOTE USE, ATTEMPTS TO FADE IN TRANSITION BUT LOOKS WORSE*/
+/*.carousel .item.active {
+      left: 0 !important;
+        -webkit-transition: opacity 1s; 
+         -moz-transition: opacity 1s;
+           -o-transition: opacity 1s;
+              transition: opacity 1s;
+}*/
+
 .carousel .item.active .animated2 {
     -webkit-animation: lightSpeedIn 1s ease-in 200ms both;
     animation: lightSpeedIn 1s ease-in 200ms both;
 }
 
 .carousel .item.active .animated3 {
-    -webkit-animation: bounceInLeft 1s ease-in-out 500ms both;
-    animation: bounceInLeft 1s ease-in-out 500ms both;
+    -webkit-animation: bounceInLeft 1s ease-in-out 800ms both;
+    animation: bounceInLeft 1s ease-in-out 800ms both;
 }
 
 
 /* Service  Area
-============================================================= */
+============================================================= 
 
 .main_feature {
     margin: 40px 0px;
@@ -15163,7 +15182,7 @@ textarea:hover {
 
 /*Animation
 ========================================================*/
-.carousel .item.active .animated4 {
+/*.carousel .item.active .animated4 {
     -webkit-animation: flipInX 1s ease-in 500ms both;
     animation: flipInX 1s ease-in 500ms both;
 }
@@ -15186,7 +15205,7 @@ textarea:hover {
 .carousel .item.active .animated8 {
     -webkit-animation: bounceInDown 1s ease-in 800ms both;
     animation: bounceInDown 1s ease-in 800ms both;
-}
+}*/
 
 .owl-theme .owl-controls {
     margin-top: 60px;
