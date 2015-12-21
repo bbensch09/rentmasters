@@ -12386,6 +12386,7 @@ Copyright (c) 2014 Daniel Eden
   .feature_content .btn-main{
     bottom:20px;
     margin-bottom: 40px;
+    color:#ffffff;
   }
 
   /*portfolio*/
@@ -13927,7 +13928,7 @@ figcaption .links a {
 }
 
 .single_table ul li.plan {
-    color: #fff;
+    color: #006caf;
     font-size: 25px;
     padding: 25px 0px;
 }
@@ -13973,8 +13974,8 @@ figcaption .links a {
 
 /* Black Bg */
 .dark_bg ul li.plan {
-    color: #fff;
-    font-size: 25px;
+    color: #006caf;
+    font-size: 2em;
     padding: 25px 0px;
 }
 /*.dark_bg ul li.price {
@@ -13987,6 +13988,8 @@ figcaption .links a {
     background: #434343;
 }*/
 .single_table ul li.plan {
+    font-size: 2em;
+    color: #006caf;
     position: relative;
     z-index: 1;
 }
@@ -14402,8 +14405,10 @@ textarea:hover {
     box-shadow: 0px!important;
 }
 
-.contact_full .btn-main {
+.contact_full .btn-main a {
     margin-top: 20px;
+        color:#ffffff;
+
 }
 /*/right*/
 
@@ -15261,5 +15266,40 @@ textarea:hover {
 
 .cl-b {clear:both;}
 .vertical_space {
-  height: 200px;
+  height: 100px;
+}
+.faq-q,.faq-a {font-style: bold;}
+.faq-question{
+  font-size: 2em;
+  line-height: 2em;
+  color: #006caf;
+  text-transform: uppercase;
+}
+.faq-answer{
+  font-size: 1.8em;
+  color: green;
+  font-style: bold;
+}
+p.faq-text{
+  font-size: 1.2em;
+  color: black;
+}
+.faq-list {
+  font-size: 1em;
+  color: black;
+}
+.yellow{
+  color: #f2c215;
+}
+.green{
+  color: green;
+}
+.how-button:visited{
+  color: #ffffff; 
+}
+.how-button{
+  color: #ffffff; 
+}
+.how-button:hover{
+  color: #000000;
 }
