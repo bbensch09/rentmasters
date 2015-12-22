@@ -1,4 +1,6 @@
-/*BEGIN MINIFIED BOOTSTRAP CORE*/
+    /*Consolidated set of CSS components based on Bootstrap Cypras (condensed so that hierarchy of duplicate styling can be controlled)
+    Original Bootstrap source: http://shapebootstrap.net/item/1524990-cyprass-html5-responsive-business-template/live-demo
+    */
 
 html {
     font-family: sans-serif;
@@ -5516,7 +5518,8 @@ a.thumbnail.active {
     padding: 10px 15px;
     margin-bottom: -1px;
     background-color: #fff;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    height:6em;
 }
 
 .list-group-item:first-child {
@@ -15305,9 +15308,12 @@ p.faq-text{
 .green{
   color: green;
 }
-.how-button:visited{
+.how-button:visited,.btn-main a:visited{
   color: #ffffff; 
 }
+.how-button:hover,.btn-main a:hover{
+  color: #333; 
+  }
 .how-button{
   color: #ffffff; 
 }
@@ -15332,7 +15338,6 @@ p.faq-text{
   background-color: #4fbafc;
   text-shadow: none;
   font-size: 2em;
-  line-height: 1.5em;
   font-weight: 300;
   margin: 20px 0px;
   margin-top: 20px;
@@ -15340,6 +15345,9 @@ p.faq-text{
   margin-bottom: 20px;
   margin-left: 0px;
   color: #fff;
+}
+.more-spacing{
+      line-height: 2em;
 }
 .font-medium{
   font-size: .7em;
@@ -15350,9 +15358,18 @@ p.faq-text{
 .text-white{
   color: #ffffff;
 }
+.text-red {
+    color: red;
+}
+.text-green {
+    color:#4cae4c;
+}
 .font-larger{
   font-size: 1.5em;
   color: #006caf;
+}
+.font-subhead{
+  font-size: 1.4em;
 }
 .font-cta{
   line-height: 1.2em;
@@ -15365,4 +15382,21 @@ p.faq-text{
   font-style: italic;
   line-height: 1em;
   font-size: .9em;
+}
+.btn-bottom {
+    bottom: 0px;
+    width: 70%;
+    left: 15%;
+    position: absolute;
+}
+.steps-box {
+    height:330px;
+    position: relative;
+}
+.footer-copyright {
+    padding-left: 10px;
+}
+.checkbox{
+    width:100px;
+    top:0px;
 }

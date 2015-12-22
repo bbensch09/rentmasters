@@ -19,6 +19,7 @@
                             <li class="active"> <a href="../index" class="page-scroll">How It Works </a></li>
                             <li><a href="../index"  class="page-scroll">FAQs</a> </li>
                             <li><a href="../index" class="page-scroll" >Pricing</a> </li>
+                            <li><a href="../index" class="page-scroll">About Us</a> </li>
                             <li><a href="../index" class="page-scroll">Contact Us</a> </li>
                         </ul>
                      </nav>
@@ -28,11 +29,11 @@
 <div class="vertical_space cl-b"> </div>
 
 <div class="col-md-12 start-estimate text-dark">
-    <h1 class="text-dark"> 
+    <h1 class="text-dark more-spacing"> 
         Know the true value of your <b> rent control.</b>
     </h1>
     <p class="font-medium text-white">
-      Simply enter your name and apartment details, and we’ll pull the latest market information about relocation payments in your neighborhood. Easier than getting Kelly Blue Book estimate.
+       Simply enter your name and apartment details, and we’ll pull the latest market information about relocation payments in your neighborhood. Easier than getting Kelly Blue Book estimate. <br> <br>
     </p>
 </div>
 
@@ -53,7 +54,21 @@
     </div>
   <% end %>
 
-<section class="new-quote-form">
+<!-- <section class="new-quote-form" class="col-md-9 left">
+      <div class="left_contact">
+          <form action="role">
+              <div class="form-level">
+                  <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                  %= f.text_area :first_name, size:"35x1", :name=>"name", :placeholder=>"Name", :id=>"name",  :value=>"", :type=>"text", :class=>"input-block"%>
+                  <span class="form-icon fa fa-user"></span>
+              </div>
+              <div class="form-level">
+                  <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
+                  <span class="form-icon fa fa-envelope-o"></span>
+              </div>
+          </form>
+      </div> -->
+
 
   <div class="col-md-3 text-right">    <%= f.label :first_name, "First Name", :class=>"edit-label" %> </div>
   <div class="col-md-9 text-left">    <%= f.text_area :first_name, size:"35x1" %> </div>
