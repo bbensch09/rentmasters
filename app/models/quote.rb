@@ -13,7 +13,7 @@ attr_reader :raw_market_avg, :error_message
     @error_message = "Unfortunately we have insufficient market data to provide a reliable estimate for your apartment. Please contact us at rentmasters.sf@gmail.com for more information."
       # self.estimate = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
       @raw_market_avg = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
-      return @error_message if raw_market_avg.nil?
+      return @error_message if raw_market_avg.nil? || raw_market_avg < 0
       market_condition_adjusted = raw_market_avg #need to configure this to use inputs
       market_annual = market_condition_adjusted * 12
       current_annual = self.current_rent * 12
@@ -39,7 +39,7 @@ def self.bathroom_options
 end
 
 def self.condition_options
-  @condition_options = ['Worse condition than a typical SF apartment (moldy bathrooms, old/broken appliances, needs lots of repairs).','On-par with a typical SF apartment.','Much nicer than a typical apartment (new appliance, looks/feels recently renovated).']
+  @condition_options = ['On-par with a typical SF apartment.','Much nicer than a typical apartment (new appliance, looks/feels recently renovated).','Worse condition than a typical SF apartment (moldy bathrooms, old/broken appliances, needs lots of repairs).']
 end
 
 end
