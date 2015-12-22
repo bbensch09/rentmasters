@@ -18,6 +18,7 @@
       <li class="active"> <a href="../index" class="page-scroll">How It Works </a></li>
       <li><a href="../index"  class="page-scroll">FAQs</a> </li>
       <li><a href="../index" class="page-scroll" >Pricing</a> </li>
+      <li><a href="../index" class="page-scroll">About Us</a> </li>
       <li><a href="../index" class="page-scroll">Contact Us</a> </li>
     </ul>
   </nav>
@@ -27,45 +28,46 @@
 <div class="vertical_space cl-b"> </div>
 
 <section>
-    <div class="col-md-12 estimate-header">
-      <div class="col-md-5 text-right font-medium text-white">
-        Your Rent Masters estimate: 
-      </div>
-      <div class="col-md-7 text-left text-white">
-           <!--  <h4> Your fair-market-value (FMV) estimate is: <%= number_to_currency(@quote.estimate) %> </h4> -->
-        <%= number_to_currency(@quote.low_range) %> - <%= number_to_currency(@quote.high_range) %>
-      </div>
-       <h2 class="cl-b text-center font-medium text-dark"> Ready to move forward? <br> <br>
-       <a href="mailto:rentmasters.sf@gmail.com?subject=My%20RentMasters%20Estimate&body=Hello,%0A%0AI%20just%20received%20an%20estimate%20from%20Rent%20Masters%20for%20the%20value%20of%20my%20rent-controlled%20apartment.%20I'm%20interested%20in%20moving%20forward%20and%20would%20like%20to%20schedule%20my%20consultation." target="_blank" class="btn-featured font-cta"> Get started </a>
-       <br> <br>    
-       </h2>
-          <!-- mailto:?subject=look at this website&body=Hi,I found this website -->
-<!-- and thought you might like it http://www.geocities.com/wowhtml -->
+  <div class="col-md-12 estimate-header">
+    <div class="col-md-5 text-right font-medium text-white">
+      Your Rent Masters estimate: 
     </div>
+    <div class="col-md-7 text-left font-large text-white">
+     <%= @quote.get_range %>
+     <%= number_to_currency(@quote.low_range, precision: 0) %> - <%= number_to_currency(@quote.high_range, precision: 0) %>
+    </div>
+   <h2 class="cl-b text-center font-medium text-dark"> Ready to move forward? <br> <br>
+     <a href="mailto:rentmasters.sf@gmail.com?subject=My%20RentMasters%20Estimate&body=Hello,%0A%0AI%20just%20received%20an%20estimate%20from%20Rent%20Masters%20for%20the%20value%20of%20my%20rent-controlled%20apartment.%20I'm%20interested%20in%20moving%20forward%20and%20would%20like%20to%20schedule%20my%20consultation." target="_blank" class="btn-featured font-cta"> Get started </a>
+     <br> <br>    
+   </h2>
+   <!-- mailto:?subject=look at this website&body=Hi,I found this website -->
+   <!-- and thought you might like it http://www.geocities.com/wowhtml -->
+ </div>
 
 
-  <div class="cl-b col-md-1">
-  </div>
-  <div class="col-md-10 text-left">
-    <h4 class="estimate-subtitle"> Your customized fair-market value (FMV) estimate has been generated based on the details below provided about your rent-controlled apartment. To improve the accuracy of your estimate, please provide the most accurate information possible.
+ <div class="cl-b col-md-1">
+ </div>
+ <div class="col-md-10 text-left">
+    <h4 class="estimate-subtitle"> Your customized fair-market value (FMV) estimate has been generated based on the details below provided about your rent-controlled apartment. You may hit the "back" button on your browser if you wish to revise your estimate with more accurate information.
     </h4>
-      <div class="col-md-3"></div>
-      <div class="col-md-9">
-        <ul class="estimate-inputs list-default">
-         <li>  <b> Your email:</b>  <%= @quote.email %> </li>
-         <li>  <b> Your current rent:</b> $<%= @quote.current_rent %> </li>
-         <li>  <b> Neighborhood:</b> <%= @quote.neighborhood %> </li>
-         <li>  <b> Bedrooms: </b> <%= @quote.bedrooms %> </li>
-         <li>  <b> Condition: </b><%= @quote.condition %> </li>
-        </ul>  
-     </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-9">
+      <ul class="estimate-inputs list-default">
+       <li>  <b> Your email:</b>  <%= @quote.email %> </li>
+       <li>  <b> Your current rent:</b> $<%= @quote.current_rent %> </li>
+       <li>  <b> Neighborhood:</b> <%= @quote.neighborhood %> </li>
+       <li>  <b> Bedrooms: </b> <%= @quote.bedrooms %> </li>
+       <li>  <b> Condition: </b><%= @quote.condition %> </li>
+     </ul>  
+   </div>
+</div>
+<div class="col-md-12">
+  <p class="disclaimer footer-copyright">
+    <br> <br>
+    <b> Disclaimer: </b> Your rent masters estimate is based on a multiple dynamic factors, including but not limited to: the current rent contract, the comparable market rent for similar buildings, the current length of tenancy, and the reported condition of the premises. Rent Masters, LLC cannot guarantee the accuracy of your estimated Fair Market Value. Due to any number of factors, the final agreed upon price after negotiation between landlord and tenant could vary considerably.
+    <br> <br>
+  </p>
+</div>
 </div>
 
-     <p class="cl-b disclaimer">
-        <br> <br>
-        <b> Disclaimer: </b> Your rent masters estimate is based on a multiple dynamic factors, including but not limited to: the current rent contract, the comparable market rent for similar buildings, the current length of tenancy, and the reported condition of the premises. Rent Masters, LLC cannot guarantee the accuracy of your estimated Fair Market Value. Due to any number of factors, the final agreed upon price after negotiation between landlord and tenant could vary considerably.
-        <br> <br>
-    </p>
-  </div>
-      
 </section>

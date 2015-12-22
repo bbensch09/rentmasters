@@ -7,22 +7,17 @@
   <% @quotes.each do |quote| %>
     <div class="main-section col-12">
       <div class="title-list col-10">
-        <h2> <%= quote.neighborhood %> -
-        </h2>
+        <h5> <%= quote.neighborhood %> -
+        </h5>
       </div>
-      <div>
-        <h3 class="gridlist-mobile-12 gridlist-desktop-9"><%= quote.email %></h3>
-      </div>
-      <div>
-        <h3 class="gridlist-mobile-12 gridlist-desktop-9"><%= quote.current_rent %></h3>
-      </div>
-
-      <button class="button"> <%= link_to 'View quote', quote_path(quote) %> </button>
+      
+      <!-- <button class="button"> <%= link_to 'View the quote', quote_path(quote) %> </button> -->
 
       <div>
-        <div class="edit-button">
-          <%= link_to 'Edit', edit_quote_path(quote), :class=> "link-b" %></div>
-        <div class="delete-button">
+<!--         <div class="edit-button">
+          %= link_to 'Edit', edit_quote_path(quote), :class=> "link-b" %>
+          </div>
+ -->        <div class="delete-button">
           <%= link_to 'Delete', quote_path(quote), :class=> "link-b",
               method: :delete,
               data: { confirm: 'Are you sure?' } %></div>
