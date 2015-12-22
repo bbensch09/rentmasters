@@ -1,158 +1,731 @@
+<header id="section_header" class="navbar-fixed-top main-nav" role="banner">
+        <div class="container">
+            <!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only"> navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index">
+                            <img src="../assets/rm-logo.jpg" alt="RentMasters.co" id="header-logo"/>
+                        </a>
+                 </div><!--Navbar header End-->
+                    <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li><a href="quotes/new" class="page-scroll">Get a Quote </a> </li>
+                            <li class="active"> <a href="#how-it-works" class="page-scroll">How It Works </a></li>
+                            <li><a href="#faqs"  class="page-scroll">FAQs</a> </li>
+                            <li><a href="#pricing" class="page-scroll" >Pricing</a> </li>
+                            <li><a href="#contact" class="page-scroll">Contact Us</a> </li>
+                        </ul>
+                     </nav>
+                </div><!-- /.container-fluid -->
+</header>
 
- <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-color:#48B9FF;"></div>
-                <div class="carousel-caption">
+ <!-- Slider start -->
+      
+  <section id="slider_part">
+         <div class="carousel" id="carousel-example-generic" data-interval="100" data-keyboard="true" data-ride="carousel" data-wrap="false"  >
+            <!-- Indicators -->
+             <ol class="carousel-indicators text-center">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             </ol>
 
-                    <h2>Tomorrow you stumble upon a <br> lotto ticket worth <span class="money"> $50,000!</span>
-                     <br>
-                        Are you willing to leave your apartment to claim it?
-                    </h2>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="overlay-slide">
+                        <img src="assets/header-sf-fog.jpg" alt="background_img" class="img-responsive">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="col-md-12 col-xs-12 text-center">                    
+                            <h3 class="animated2"> Housing in San Francisco <br>
+                                <span class="highlight_red">is too expensive.</span>  </h3>
+                            <div class="line"></div>
+                            <p class="animated3">(you already knew that) </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-color:#48B9FF;"></div>
-                <div class="carousel-caption">
-                    <h2>At Rent Masters we help tenants in San Francisco discover and utilize the most valuable asset they didn't know they owned, their <span class="money"> <strong> rent control. </strong> </span> </h2>
+                <div class="item">
+                    <div class="overlay-slide">
+                        <img src="assets/header-sf-fog.jpg" alt="background_img" class="img-responsive">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="col-md-12 col-xs-12 text-center">                
+                            <h3 class="animated2"> Rent Masters can help you <br>
+                            <span class="highlight_green">beat the system.</span>                        
+                            </h3>
+                            <!-- <div class="line"></div> -->
+                            <p class="animated3"> We help San Francisco tenants <br> 
+                            discover and utilize the most valuable asset they <br> barely knew they owned,  
+                                <b>their rent control.</b>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-color:#48B9FF;"></div>
-                <img src="assets/rm-logo.jpg" class="nav-logo" alt="Rent Mastesr">
-                <div class="carousel-caption">
-                    <h2>Sign up today to discover the true value of your rent control asset.</h2>
-                    <a href="quotes/new" class="btn btn-hero">Tell me more</a>
+                <div class="item">
+                    <div class="overlay-slide">
+                        <img src="assets/header-sf-fog.jpg" alt="background_img" class="img-responsive">
+                    </div>
+                    <div class="carousel-caption">
+                        <div class="col-md-12 col-xs-12 text-center">                
+                            <h3 class="animated2"> Want to you know how much your rent control
+                            <span class="highlight_green"> is really worth?</span>
+                            </h3>
+                            <div class="line"></div>                            
+                                    <a href="quotes/new" class="animated3 btn-featured"> Learn More </a>
+                                <h4 class="animated3 button-subtext"> Sign up now & be empowered. </h4>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+             </div>      <!-- End Carousel Inner -->
+
+            <!-- Controls -->
+            <div class="slides-control ">
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <!-- <span><img src="assets/left.png" class="fa fa-angle-left"></span> -->
+                     <span><i class="fa fa-angle-left"></i></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span><i class="fa fa-angle-right"></i></span>
+                    <!-- <span><img src="assets/right.png" class="fa fa-angle-left"></span> -->
+                </a>
             </div>
         </div>
+    </section>
+<!--/ Slider end -->              
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
 
-        <!-- Call to Action Section -->
-        <div class="well">
+<!-- Service Area start -->
+
+    <section id="how-it-works">
+        <div class="container cl-b">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="feature_header text-center">
+                            <h3 class="feature_title"> <b>How does this work?</b></h3>
+                            <h4 class="feature_sub">
+                            At Rent Masters we empower renters to make responsible and informed decisions. </h4>
+                            <h4 class="feature_sub">
+                            Namely, we can help you decide if it would be a good decision to move out of your <br>
+                            apartment in exchange for a one-time <b> relocation payment.</b>
+                            </h4>
+                            <div class="divider"></div>
+                <hr>
+                            <h3>    What's a relocation payment?</h3>
+                            <p class="feature_content_left  ">
+                                Due to the sharp rise in the cost of housing in San Francisco over the last 5-10 years, landlords whose buildings are rent-controlled are increasingly willing to pay tenants to voluntarily move out of their apartments. Depending on how much "market" rent has gone up since you began your lease, your landlord can potentially recoup thousands of dollars more per month from a new tenant paying market rent. Accordingly, landlords today have a substantial financial incentive to persuade their tenants to move-out.
+                            </p>
+                        </div>
+                    </div>  <!-- Col-md-12 End -->
+                </div>
+                <div class="row">
+                    <div class="main_feature text-center">
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                    <h4>Step 1<br><br>
+                                    <span class="feature_steps"> Learn the Landscape </span> </h4>
+                                    <p>
+                                    Review your Rent Masters estimate and discuss with roommates and significant others.Familiarize yourself with the process (explore our FAQs below).
+                                    </p>
+                                    <button class="btn btn-main"><a class="how-button" href="#faqs">  Jump to FAQs</a> </button>
+                                </div>
+                            </div>
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-pencil"></i>
+                                    <h4>Step 2<br><br>
+                                    <span class="feature_steps"> Initiate Contact </span> </h4>
+                                    <p>Take the first step forward by scheduling a 30-minute <b>free consultation </b>with a member of the Rent Masters team, where we'll explore your options and agree on an approach and timelines. </p>
+                                    <button class="btn btn-main" ><a class="how-button" href="#contact"> Schedule Now </a> </button>
+                                </div>
+                        </div> <!-- Col-md-4 Single_feature End -->
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-cog"></i>
+                                    <h4>Step 3<br><br>
+                                    <span class="feature_steps"> Negotiate </span> </h4>
+                                    <p>There is no such thing as a typical negotiation, but expect at least 1-2 weeks. During this stage Rent Masters customers can select either basic or advanced legal serices from our team of professionals. </p>
+                                    <button class="btn btn-main"> <a class="how-button" href="#pricing"> Pricing </a> </button>
+                                </div>
+                        </div> <!-- Col-md-4 Single_feature End -->
+                        <div class="col-md-3 col-xs-12 col-sm-6">
+                                <div class="feature_content">
+                                    <i class="fa fa-desktop"></i>
+                                    <h4>Step 4<br><br>
+                                    <span class="feature_steps"> Sign & Smile </span> </h4>
+                                    <p>Once signed, SF law stipulates a 45-day window during which you may rescind the aggrement for any reason, so no need to pack your bags immediately. Typical relocation payments are paid out 50% at signing and 50% after the 45 days expire.</p>
+                                    <button class="btn btn-main"> <a class="how-button" href="#faqs"> Read More </a> </button>
+                                </div>
+                        </div> <!-- Col-md-4 Single_feature End -->
+                        <!-- <button class="btn btn-main"> Read More</button> -->
+                    </div>
+            </div>  <!-- Row End -->
+        </div>  <!-- Container End -->
+    </section>
+<!-- Service Area End -->
+
+
+<!-- Basic Qualification  start -->
+                <hr>
+<section id="do-i-qualify">
+    <div class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <h4>In just a few clicks, discover the fair market value of your own rent-controlled apartment.</h3>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="feature_header text-center">
+                            <h3 class="feature_title">Do I even <b>Qualify?</b></h3>
+                            <h4 class="feature_sub">The long answer? It depends. So you might as well get a free estimate. Until then, the four questions below should give you a quick sense of whether or not Rent Masters makes sense for you. </h4>
+                            <div class="divider"></div>
+                        </div>
+                    </div>  <!-- Col-md-12 End -->
                 </div>
-                <div class="col-md-3">
-                    <a class="btn btn-lg btn-default btn-block" href="../quotes/new">Get your estimate</a>
+            <div class="about-desc">
+                <div class="row">
+                <!-- Left about end -->
+                    <div class="col-md-6">
+                        <div class="single-progress">
+                            <label > Have you rented in San Francisco for at least <span>3 years?</span></label>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                <span class="sr-only">80% Complete (success)</span>
+                              </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-progress">
+                            <label > Do you live in a rent-controlled building? <span>(built before 1979)</span></label>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%">
+                                <span class="sr-only">99% Complete</span>
+                              </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div> <!--row end -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                         <div class="single-progress">
+                            <label > Do you have a comfortable enough salary to afford paying market rent (in SF or elsewhere)?</label>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                <span class="sr-only">60% Complete (warning)</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-progress">
+                            <label > Do you live in one of the many increasingly trendy neighborhoods in SF?</label>
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                <span class="sr-only">80% Complete (danger)</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- 2nd row end -->
+            </div> <!-- about desc end -->
+            <br>
+            <h5 class="feature_sub text-center">If you answered <b> no </b> to any of these questions, unfortunately Rent Masters is likely not a good fit. </h5>
+        </div>
+</section>
+<!-- Basic Qual details end -->
+
+
+<div class="clearfix"></div>
+
+
+<!-- Pricing Table Start -->
+<section id="pricing" class="pricing_overlay">
+        <div class="vertical_space cl-b"> </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title">Our <b>Pricing</b></h3>
+                    <h4 class="feature_sub text-center">Like filing your taxes, you can do it yourself or opt for the professional. <br>  We're here to help every step of the way, in the manner that best fits your needs.</h4>
+                    <div class="divider"></div>
                 </div>
+            </div>  <!-- Col-md-12 End -->
+
+            <div class="text-center pricing">
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table">
+                    <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">Do it yourself<br><span>one-time-fee</span></li>
+                            <li class="price"> $99 <span>one-time-fee</span></li>
+                            <li> Free 30-minute consultation</li>
+                            <li> Free contract templates</li>
+                            <li> No professional legal services</li>
+                            <li> Payment logistics handled offline</li>
+                            <li class="price_button"> <button class="btn btn-main">Sign Up Now!</button></li>
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table grey_bg  ">
+                        <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">Standard  <br><span>refundable deposit</span></li>
+                            <li class="price"> 3% fee <span>($99 deposit)</span></li>
+                            <li> Unlimited access to market-comps</li>
+                            <li> Free 30-minute consultation</li>
+                            <li> 3-5 hrs professional legal services</li>
+                            <li> Full contract review</li>
+                            <li> Free electronic payment</li>
+                            <li class="price_button"> <button class="btn btn-main featured"> Sign Up Now!</button></li>
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
+                <div class="col-md-4 col-xs-12 col-sm-12">
+                    <div class="single_table dark_bg">
+                        <div class="plan_wraper"></div>
+                        <ul>
+                            <li class="plan">Premium  <br><span>refundable deposit</span></li>
+                            <li class="price"> 5% fee <span>($99 deposit)   </span></li>
+                            <li> Unlimited access to market-comps</li>
+                            <li> Free 30-minute consultation</li>
+                            <li> Up to 10hrs of legal services</li>
+                            <li> Full contract review</li>
+                            <li> Free electronic payment </li>
+                            <li class="price_button"> <button class="btn btn-main">Sign Up Now!</button></li>
+                        </ul>
+                    </div>
+                </div> <!-- Single col-md-4 End -->
             </div>
         </div>
-
-    <!-- Page Content -->
-    <div class="banner-imgs">
-        <img class="col-md-6 img-banner" src="http://36.media.tumblr.com/f34557b271ec49de7d7b1a3dafa25ca4/tumblr_mh2t0niaAW1qz82gvo1_1280.jpg" alt="no image">
-        <img class="col-md-6 img-banner" src="http://i.huffpost.com/gen/1134593/images/o-SAN-FRANCISCO-PAINTED-LADIES-facebook.jpg" alt="no image">
     </div>
+</section>  <!-- Pricing Section End -->
+<!-- Pricing Table End -->
 
-
-
-        <!-- Features Section -->
+<!-- FAQs Start -->
+<section id="faqs">
+        <div class="vertical_space cl-b"> </div>
+    <div class="container">
         <div class="row">
-            <div class="col-md-12" id="how_it_works">
-                <h2 class="page-header">How Rent Masters Works</h2>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title">Frequently Asked <b> Questions</b></h3>
+                    <h4 class="feature_sub"> Can't find what you're looking for? Please simply send your question by email to <a href="mailto:rentmasters.sf@gmail.com"> rentmasters.sf@gmail.com </a> </h4>
+                    <div class="divider"></div>
+                </div>
+            </div>  <!-- Col-md-12 End -->
+        </div>
+        <div class="row">
+             <div class="blog-timeline">
+                <div id="owl-blog" class="owl-carousel owl-theme">
+                    <div class="item ">
+                        <div class="">
+                            <div class="post_img text-left">
+                                <h5 class="faq-question"> <span class="faq-q">Q:</span> 
+                                    Is this even legal?
+                                </h5>
+                                <h5 class="faq-answer"> <span class="faq-a">A:</span> 
+                                    Yes, it is 100% legal.
+                                </h5>
+                                <p class="faq-text">Not only is it generally legal for any two private parties (tenant and landlord) to willfully agree to a financial contract, the process of tenant-landlord buyout agreements is  specifically regulated in San Franciscoby a series of laws enacted in March of 2015. The new regulations are intended to protect tenants and ensure that any agreement is mutually beneficial. In a nutshell, the process requires a number of filings and disclosures, which ensure that tenants are fully aware and informed of their rights so as to prevent landlords from wrongfully pressuring uninformed tenants into making a poor decision. Rent Masters abides by all such regulations and disclosure requirements, and will connect interested customers with our preferred legal partner if they choose to enlist their services for review their final contract. </p>
+                            </div> 
+                            <div class="post_img text-left">
+                                <h5 class="faq-question"> <span class="faq-q">Q:</span> 
+                                    Will I have to pay taxes on this?
+                                </h5>
+                                <h5 class="faq-answer"> <span class="faq-a">A:</span> 
+                                    Yes, most definitely.
+                                </h5>
+                                <p class="faq-text">
+                                    While we do not have any certified accountants on-staff, we can refer you to qualified professionals should you seek formal tax advice. In all likelihood, you will pay tax on the amount at your marginal income rate.
+                                </p>
+                            </div> 
+                        <div class="post_img text-left">
+                                <h5 class="faq-question"> <span class="faq-q">Q:</span> 
+                                    Does this make the housing crisis worse?
+                                </h5>
+                                <h5 class="faq-answer"> <span class="faq-a">A:</span> 
+                                    Most likely not, but markets are hard to predict.
+                                </h5>
+                                <p class="faq-text">
+                                    We'll share more data on this topic in the future when we have more data. As of today, all we can really do is speculate at the microeconomic level :
+                                    <ul>
+                                        <li class="faq-list" >
+                                        - The housing crisis in SF is primarily due to an insufficient supply of housing units, given the current demand of citizens to live in the city. </li>
+                                        <li class="faq-list"> 
+                                        - When demand exceeds supply, prices go up. If demand softens, prices go down.</li>
+                                        <li class="faq-list">
+                                        - If you accept a relocation offer and move into another vacant unit, your impact on total housing demand in San Francisco <span class="yellow">is neutral.</span></li>
+                                        <li class="faq-list">
+                                            If you instead take the relocation money and move elsewhere (to the East Bay, South Bay, Southeast Asia, etc.), then you are <span class="green">decreasing total housing demand </span> by one unit, and thus actually helping reduce price pressure.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div> 
+                        <div class="post_img text-left">
+                                <h5 class="faq-question"> <span class="faq-q">Q:</span> 
+                                    But won't average rent prices go up?
+                                </h5>
+                                <h5 class="faq-answer"> <span class="faq-a">A:</span> 
+                                    Yes, the average will rise, but the peak rents <b> hopefully </b> will fall.
+                                </h5>
+                                <p class="faq-text">
+                                    Even though average rents would rise, the total number of apartments available should either increase (to the extent renters leave SF or buy property) or stay the same. The hypothetical economic impact is thus that we move closer toward a normal distribution of market rents. Today, because the "market-rent" is so extraordinary, the off-the-grid market for shared rooms and subtenants has produced a bimodal distribution of rents, basically between the rent-control haves and have-nots. If all eligible Rent Control customers accepted offers, we would expect to see a much closer distribution of rents in the city, with peak prices lower than today, but average prices being higher. In other words, you might be able to regularly find a 1-bedroom for $2400, but the days of shared rooms for $1200 will have disappeared.
+                                </p>
+                            </div> 
+                            <div class="post_img text-left">
+                                <h5 class="faq-question"> <span class="faq-q">Q:</span> 
+                                    Did you just make that up?
+                                </h5>
+                                <h5 class="faq-answer"> <span class="faq-a">A:</span> 
+                                    Yes, after 20+ hours of research.
+                                </h5>
+                                <p class="faq-text"> Whether or not the impact on housing prices of relocation agreements is even measurable remains to be seen. We at Rent Masters are eager to be at the forefront of that measurement, but do not expect that our customers' decisions will be making any problems worse. In addition, we intend to utilize the resources of the company to advocate for and pursue any number of iniatives focused on increasing the supply of housing in San Francisco, which we belive is ultimately necessary in order to make housing prices more affordable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div> <!-- blog Timeline End -->
+        </div>
+    </div>
+</section>
+<!-- bLOG End -->
+
+<!-- About us start -->
+<!-- <section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title">What <b>We do</b></h3>
+                    <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                    <div class="divider"></div>
+                </div>
             </div>
-            <div class="col-md-10">
-                <h3>At Rent Masters we empower renters to make good decisions. Namely, would it be a good decision to move out of your apartment in exchange for a relocation payment? </h3>
-
-                <ol>
-                    <li class="steps-how-it-works"> Understand the landscape: your rent control <strong>is an asset.</strong>
-                        <ul>
-                            <li> It comes in the form of a monthly savings that you could otherwise be paying toward rent </li>
-                            <li>Unlike other assets, it is mostly <strong>illiquid,</strong> and non-transferable. Which is why you haven't seriously considered moving apartments for the last XX years. </li>
-                        </ul>
-                    </li>
-                    <li class="steps-how-it-works"> Know the value of that asset. Our proprietary model will help you out. Easier than using Kelly Blue Book to see what your car is worth. </li>
-                    <li class="steps-how-it-works">Decide if you want to move forward.
-                        <ul>
-                            <li>We can't make the decision for you, but our staff is here to help. Each set of circumstances are unique, and so all customers are encouraged to take advantage of our free 30-minute consultation.</li>
-                        </ul>
-                    </li>
-
-
-                    <li class="steps-how-it-works">What to expect when you move forward.
-                        <ul>
-                            <li>Week 1: Review estimate & attend 30-minute consulation.</li>
-                            <li>Week 2: Initiate contact & schedule meeting with landlord</li>
-                            <li>Weeks 3-4: Negotiation and contract review.</li>
-                            <li>Weeks 5-10: Mandatory 45-day "buyers remorse" waiting period before move-out date and full contract execution.</li>
-                        </ul>
-                    </li>
-                </ol>
-                <h4> Like filing your taxes, you can do it yourself or use a professional. We're here to help at every stage, in the manner that best fits your needs. </h4>
-                <h3>Pricing</h3>
-                    <ul>
-                        <li>For a limited time, the only fee is a $100 fully refundable deposit. </li>
-                        <li>If at any time you decide to no longer pursue an agreement, your deposit will be returned within 48hours.</li>
-                        <li>The deposit will be kept as payment if and only upon execution of a successful relocation agreement.</li>
+        </div>
+        <div class="row">
+            <div class="feature-tab">
+               <div class="col-md-2 col-sm-3 col-xs-12">
+                    <ul class="nav nav-tabs main-tab-list text-center" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#home" role="tab" data-toggle="tab" >
+                              <div class="single-tab">
+                                    <div class="f-icon">
+                                        <i class="fa fa-laptop"></i>
+                                    </div>
+                                </div>
+                                 <h4>Web</h4>
+                            </a>
+                          </li>
+                          <li role="presentation" >
+                            <a href="#profile" role="tab" data-toggle="tab">
+                                <div class="single-tab">
+                                    <div class="f-icon">
+                                        <i class="fa fa-send"></i>
+                                    </div>
+                                </div>
+                                <h4>Email Marketing</h4>
+                            </a>
+                          </li>
+                          <li role="presentation" >
+                            <a href="#messages" role="tab" data-toggle="tab">
+                                <div class="single-tab">
+                                    <div class="f-icon">
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                                <h4>Graphics</h4>
+                            </a>
+                          </li>
+                          <li role="presentation" >
+                            <a href="#photo" role="tab" data-toggle="tab">
+                                <div class="single-tab">
+                                    <div class="f-icon">
+                                        <i class="fa fa-camera"></i>
+                                    </div>
+                                </div>
+                                <h4>Photography</h4>
+                            </a>
+                          </li>
+                            <li role="presentation" >
+                            <a href="#ios" role="tab" data-toggle="tab">
+                              <div class="single-tab">
+                                    <div class="f-icon">
+                                        <i class="fa fa-send"></i>
+                                    </div>
+                                </div>
+                               <h4>ios application</h4>
+                            </a>
+                          </li>
                     </ul>
+                </div>  
+                <div class="col-md-10 col-sm-9 col-xs-12">
+                    <div class="tab-content main-tab-content">
+                          <div role="tabpanel" class="tab-pane active " id="home">
+                                <div class="col-md-12 col-sm-9">
+                                     <img src="images/about/web1.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-md-12 col-sm-9">
+                                    <div class="c-tab">
+                                         <h4>Web Design and Development</h4>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium dolore sequi excepturi recusandae reprehenderit, distinctio.</p>
+                                         <br>
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum, quisquam eum eaque. Excepturi nisi necessitatibus, inventore explicabo corporis expedita fugit aspernatur harum reprehenderit temporibus, pariatur esse laborum qui quisquam.
+                                         </p>
+                                         <br>
+                                         <a href="#"> Learn More</a>
+                                    </div>
+                                </div>
+                                
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="profile">
+                                <div class="col-md-12 col-sm-9">
+                                     <img src="images/about/browse.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-md-12 col-sm-9">
+                                    <div class="c-tab">
+                                         <h4>Email and Socail Marketing</h4>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium dolore sequi excepturi recusandae reprehenderit, distinctio.</p>
+                                         <br>
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum, quisquam eum eaque. Excepturi nisi necessitatibus, inventore explicabo corporis expedita fugit aspernatur harum reprehenderit temporibus, pariatur esse laborum qui quisquam.
+                                         </p>
+                                         <br>
+                                         <a href="#"> Learn More</a>
+                                    </div>
+                                </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="messages">
+                               <div class="col-md-12 col-sm-9">
+                                     <img src="images/about/web1.png" alt="" class="img-responsive">
+                                </div>
+                               <div class="col-md-12 col-sm-9">
+                                    <div class="c-tab">
+                                         <h4>Graphics Brand Identity</h4>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium dolore sequi excepturi recusandae reprehenderit, distinctio.</p>
+                                         <br>
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum, quisquam eum eaque. Excepturi nisi necessitatibus, inventore explicabo corporis expedita fugit aspernatur harum reprehenderit temporibus, pariatur esse laborum qui quisquam.
+                                         </p>
+                                         <br>
+                                        <a href="#"> Learn More</a>
+                                    </div>
+                                </div>
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="photo">
+                               <div class="col-md-12 col-sm-9">
+                                     <img src="images/about/graphics.png" alt="" class="img-responsive">
+                                </div>
+                               <div class="col-md-12 col-sm-9">
+                                    <div class="c-tab">
+                                        <h4>Photography Design</h4>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium dolore sequi excepturi recusandae reprehenderit, distinctio.</p>
+                                         <br>
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum, quisquam eum eaque. Excepturi nisi necessitatibus, inventore explicabo corporis expedita fugit aspernatur harum reprehenderit temporibus, pariatur esse laborum qui quisquam.
+                                         </p>
+                                         <br>
+                                        <a href="#"> Learn More</a>
+                                    </div>
+                                </div>
+                          </div>
+                            <div role="tabpanel" class="tab-pane" id="ios">
+                                <div class="col-md-12 col-sm-9">
+                                     <img src="images/about/web1.png" alt="" class="img-responsive">
+                                </div>
+                               <div class="col-md-12 col-sm-9">
+                                    <div class="c-tab">
+                                         <h4>ios application</h4>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus praesentium dolore sequi excepturi recusandae reprehenderit, distinctio.</p>
+                                         <br>
+                                         <p>
+                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum, quisquam eum eaque. Excepturi nisi necessitatibus, inventore explicabo corporis expedita fugit aspernatur harum reprehenderit temporibus, pariatur esse laborum qui quisquam.
+                                         </p>
+                                         <br>
+                                         <a href="#"> Learn More</a>
+                                    </div>
+                                </div>
+                             </div>
+                    </div>
+                </div>
+
+                 
             </div>
         </div>
-        <hr>
+    </div>
+</section> 
 
-        <!-- Begin new section -->
+-->
 
+<!-- About us End -->
+
+
+<!-- Conatct Area Start-->
+
+<section id="contact">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12" id="impact">
-                <h2 class="page-header">Is this even legal?</h2>
-            </div>
-            <div class="col-md-10">
-                <h3>TLDR? Yes, this is 100% legal. Dozens of tenant relocation agreements are signed every month in San Francisco. </h3>
-
-                <h3>The Details:</h3>
-                <p> In March 2015, San Francisco enacted definitive regulations governing the process of a landlord and their tenant coming to a relocation agreement that is mutually beneficial. In a nutshell, the process requires a number of filings and disclosures, which are intended to ensure that tenants are fully aware and informed of their rights, and to prevent landlords from wrongfully pressuring uninformed tenants into making a poor decision. Rent Masters abides by all such regulations, and will connect interested customers with our preferred legal partner if the choose to have an extra professional set of eyes review their final contract.
-                </p>
-
-                <h3>(But it still feels wrong...?)</h3>
-                <h4> Does accepting a relocation agreement contribute to the SF housing crisis? </h4>
-                <p>
-                    Expect more supporting data & discussion in the future on this topic. As of December 2015, all we can really be sure of is the following set of facts:
-                    <ul>
-                        <li>The housing crisis in SF is primarily due to an insufficient supply of housing units, given the current demand of citizens to live in the city.</li>
-                        <li>When demand exceeds supply, prices go up. If demand softens, prices go down.</li>
-                        <li>If you accept a relocation offer and move into another vacant unit, your impact on total housing demand in San Francisco is neutral. </li>
-                        <li>If you instead take the relocation money and move to the East Bay, South Bay, Southeast Asia, etc., then your decision has decreased the total demand for SF housing by one unit. </li>
-                    </ul>
-                </p>
-                <p>Whether or not the impact on housing prices of relocation agreements is even measurable remains to be seen. We at Rent Masters are eager to be at the forefront of that measurement, but do not expect that our customers' decisions will be making any problems worse. In addition, we intend to utilize the resources of the company to advocate for and pursue any number of iniatives focused on increasing the <strong>supply </strong> of housing in San Francisco, which we belive is ultimately necessary in order to make housing prices more affordable.</p>
-
-
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="feature_header text-center">
+                    <h3 class="feature_title">Become a <b>Rent Master</b>today!</h3>
+                    <h4 class="feature_sub">Schedule your free 30-minute consultation. </h4>
+                    <div class="divider"></div>
+                </div>
             </div>
         </div>
-        <hr>
-
-        <!-- Begin new section -->
         <div class="row">
-            <div class="col-md-12" id="faqs">
-                <h2 class="page-header">Frequently Asked Questions</h2>
-            </div>
-            <div class="col-md-10">
-                <h3>FAQs are comming soon! </h3>
+             <div class="contact_full">
+                <div class="col-md-6 left">
+                    <div class="left_contact">
+                        <form action="role">
+                            <div class="form-level">
+                                <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                                <span class="form-icon fa fa-user"></span>
+                            </div>
+                            <div class="form-level">
+                                <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
+                                <span class="form-icon fa fa-envelope-o"></span>
+                            </div>
+                            <div class="form-level">
+                                <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
+                                <span class="form-icon fa fa-phone"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-                <h4> To ask a question, please email <a href="mailto:rentmasters.sf@gmail.com"/> rentmasters.sf@gmail.com </a> </h4>
+                <div class="col-md-6 right">
+                    <div class="form-level">
+                        <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
+                        <span class="form-icon fa fa-pencil"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-main featured"><a href="www.rentmasters.youcanbookme.com"> Submit Now
+                    </a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="g-map" class="no-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="map" id="map"></div>
+        </div>
+    </div>
+</div>
+<!-- Footer Area Start -->
+
+<section id="footer">
+    <!-- <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="menu_head">Main Menu</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#about">Home</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="menu_head">Useful Links</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#"> inventore natus ullam eum</a></li>
+                            <li><a href="#">consectetur adipisicing elit.</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="menu_head">Contact us</h3>
+                    <div class="footer_menu_contact">
+                        <ul>
+                            <li> <i class="fa fa-home"></i>
+                                <span> 12 Segun Bagicha, 10th Floor </span></li>
+                            <li><i class="fa fa-globe"></i>
+                                <span> +880-12345678</span></li>
+                            <li><i class="fa fa-phone"></i>
+                                <span> info@mail.com</span></li>
+                            <li><i class="fa fa-map-marker"></i>
+                            <span> www.web.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h3 class="menu_head">Tags</h3>
+                    <div class="footer_menu tags">
+                        <a href="#"> Design</a>
+                        <a href="#"> User Interface</a>
+                        <a href="#"> Graphics</a>
+                        <a href="#"> Web Design</a>
+                        <a href="#"> Development</a>
+                        <a href="#"> Asp.net</a>
+                        <a href="#"> Bootstrap</a>
+                        <a href="#"> Joomla</a>
+                        <a href="#"> SEO</a>
+                        <a href="#"> Wordepress</a>
+                    </div>
+                </div>
 
             </div>
         </div>
-        <hr>
+    </div> -->
 
-                <!-- <h3 class="page-header">
-                    Renting in San Francisco <span class="strikethrough"> is too damn expensive </span>  just got (mildly) more affordable.
-                </h3> -->
+    <div class="footer_b">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer_bottom">
+                        <p class="text-block"> &copy; Copyright reserved to <span>Rent Mastesr, LLC. </span></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer_mid pull-right">
+                        <ul class="social-contact list-inline">
+                            <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Area End -->
+
+<!-- Back To Top Button -->
+    <div id="back-top">
+        <a href="#slider_part" class="scroll" data-scroll>
+            <button class="btn btn-primary" title="Back to Top">
+                <i class="fa fa-angle-up"></i>
+                    Back to Top
+                <i class="fa fa-angle-up"></i>
+            </button>   
+        </a>
+    </div>
+    <!-- End Back To Top Button -->
