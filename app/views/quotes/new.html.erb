@@ -1,9 +1,39 @@
+<header id="section_header" class="navbar-fixed-top main-nav" role="banner">
+        <div class="container">
+            <!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only"> navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index">
+                            <img src="../assets/rm-logo.jpg" alt="RentMasters.co" id="header-logo"/>
+                        </a>
+                 </div><!--Navbar header End-->
+                    <nav class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li><a href="../index" class="page-scroll">Get a Quote </a> </li>
+                            <li class="active"> <a href="../index" class="page-scroll">How It Works </a></li>
+                            <li><a href="../index"  class="page-scroll">FAQs</a> </li>
+                            <li><a href="../index" class="page-scroll" >Pricing</a> </li>
+                            <li><a href="../index" class="page-scroll">Contact Us</a> </li>
+                        </ul>
+                     </nav>
+                </div><!-- /.container-fluid -->
+</header> 
+
 <div class="vertical_space cl-b"> </div>
-        
-<h1>Estimate the value of my rent control </h1>
-<p>
-  Know the value of that asset. Our proprietary model will help you out. Easier than using Kelly Blue Book to see what your car is worth.
-</p>
+
+<div class="col-md-12 start-estimate text-dark">
+    <h1 class="text-dark"> 
+        Know what your <b> rent control </b> is worth 
+    </h1>
+    <p class="font-medium text-white">
+      Determine the value of your rent control in minutes. Simply enter your name and apartment details, and we’ll pull the latest market information about relocation payments in your neighborhood. Easier than getting Kelly Blue Book estimate.
+    </p>
+</div>
 
 <%= form_for @quote, multipart:true do |f| %>
 
@@ -24,37 +54,31 @@
 
 <section class="new-quote-form">
 
-  <p>
-    <%= f.label :first_name, "First Name", :class=>"edit-label" %>
-    <%= f.text_area :first_name, size:"35x1" %> <br>
-    <%= f.label :last_name, "Last Name", :class=>"edit-label" %>
-    <%= f.text_area :last_name, size:"35x1" %> <br>
-    <%= f.label :email, "Email Address", :class=>"edit-label" %>
-    <%= f.text_area :email, size:"35x1" %> <br>
-  </p>
+  <div class="col-md-3 text-right">    <%= f.label :first_name, "First Name", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">    <%= f.text_area :first_name, size:"35x1" %> </div>
 
-  <p>
-    <%= f.label :neighborhood, "Neighborhood", :class=>"edit-label"  %>
-    <%= f.select :neighborhood, options_for_select(MarketRent.neighborhood_options, @quote.neighborhood) %>
-  </p>
- <p>
-  <%= f.label :bedrooms, "Number of Bedrooms:", :class=>"edit-label"  %>
-  <%= f.select :bedrooms, options_for_select(MarketRent.bedrooms_options, @quote.bedrooms) %>
-</p>
-  <br>
-    <%= f.label :bathrooms, "Number of bathrooms:", :class=>"edit-label"  %>
-    <%= f.select :bathrooms, options_for_select(Quote.bathroom_options, @quote.bathrooms) %>
-    <br>
-    <%= f.label :condition, "What condition is the apartment in?", :class=>"edit-label"  %>
-    <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition) %>
-    <br>
-    <%= f.label :current_rent, "How much do you currently pay in monthly rent?", :class=>"edit-label" %>
-    <%= f.text_area :current_rent, size:"35x1" %> <br>
-  </p>
+  <div class="col-md-3 text-right">    <%= f.label :last_name, "Last Name", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">    <%= f.text_area :last_name, size:"35x1" %> </div>
 
+  <div class="col-md-3 text-right">    <%= f.label :email, "Email", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">    <%= f.text_area :email, size:"35x1" %> </div>
 
-  <div>
-    <%= f.submit 'Request Your Estimate', :class=>"button button-request" %>
+  <div class="col-md-3 text-right">    <%= f.label :bedrooms, "Number of Bedrooms", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">      <%= f.select :bedrooms, options_for_select(MarketRent.bedrooms_options, @quote.bedrooms) %> </div>
+
+  <div class="col-md-3 text-right">    <%= f.label :neighborhood, "Neighborhood", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">    <%= f.select :neighborhood, options_for_select(MarketRent.neighborhood_options, @quote.neighborhood) %> </div>
+
+  <div class="col-md-3 text-right">    <%= f.label :condition, "What condition is the apartment in?", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">   <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition) %> </div>
+  <div class="col-md-3 text-right">    <%= f.label :current_rent, "How much do you currently pay in monthly rent?", :class=>"edit-label" %> </div>
+  <div class="col-md-9 text-left">  <%= f.text_area :current_rent, size:"35x1" %> </div>
+  
+
+  <div class="col-md-12 text-center">
+      <%= f.submit 'Request Your Estimate', :class=>"class=btn btn-featured font-cta" %>
   </div>
+  <div class="vertical_space cl-b"> </div>
+
 </section>
 <% end %>

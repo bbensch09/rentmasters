@@ -13093,6 +13093,19 @@ ul.navbar-nav > .active > a {
     background-color: #4cae4c;
     color: white;
 }
+.btn-featured:hover {
+    text-decoration: none;
+    position: relative;  
+    border-radius: 2px;
+    z-index: 1;
+    font-weight: 600px;
+    padding: 15px 40px !important;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: #4cae4c;
+    color: #006caf;
+}
 
 .button-subtext {
   color:white;
@@ -15302,4 +15315,56 @@ p.faq-text{
 }
 .how-button:hover{
   color: #000000;
+}
+.estimate-header{
+  border: 1px solid #d1d3d3;
+  background-color: #4fbafc;
+  text-shadow: none;
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 20px 0px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+.start-estimate{
+  border: 1px solid #d1d3d3;
+  background-color: #4fbafc;
+  text-shadow: none;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 20px 0px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: #fff;
+}
+.font-medium{
+  font-size: .7em;
+}
+.text-dark{
+  color: #006caf;
+}
+.text-white{
+  color: #ffffff;
+}
+.font-larger{
+  font-size: 1.5em;
+  color: #006caf;
+}
+.font-cta{
+  line-height: 1.2em;
+  font-size: 1.1em;
+}
+.estimate-inputs {
+  list-style-type: circle; 
+}
+.disclaimer {
+  font-style: italic;
+  line-height: 1em;
+  font-size: .9em;
 }

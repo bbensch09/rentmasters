@@ -2,14 +2,18 @@ class Quote < ActiveRecord::Base
 
 belongs_to :market_rent
 
-validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :bathrooms, :condition, :current_rent,
+validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :condition, :current_rent,
   presence: true
 
-attr_accessor :estimate, :low_estimate, :high_estimate
+attr_accessor :estimate, :low_range, :high_range
+attr_reader :raw_market_avg, :error_message
+
 
   def estimate
+    @error_message = "Unfortunately we have insufficient market data to provide a reliable estimate for your apartment. Please contact us at rentmasters.sf@gmail.com for more information."
       # self.estimate = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
-      raw_market_avg = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
+      @raw_market_avg = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
+      return @error_message if raw_market_avg.nil?
       market_condition_adjusted = raw_market_avg #need to configure this to use inputs
       market_annual = market_condition_adjusted * 12
       current_annual = self.current_rent * 12
@@ -17,12 +21,15 @@ attr_accessor :estimate, :low_estimate, :high_estimate
       self.estimate = cash_flow_delta2.to_i / 1000 * 1000
   end
 
-  def low_estimate
-        self.low_estimate = (self.estimate * 0.75) / 1000 * 1000
+  def low_range
+        return @error_message if @raw_market_avg.nil?
+        self.low_range = (self.estimate * 0.75) / 1000 * 1000
   end
 
-  def high_estimate
-        self.high_estimate = (self.estimate * 1.25) / 1000 * 1000
+  def high_range
+
+        return @error_message if @raw_market_avg.nil?
+        self.high_range = (self.estimate * 1.25) / 1000 * 1000
   end
 
 def self.bathroom_options
@@ -38,10 +45,3 @@ end
 end
 
 
-
-
-class Calculator
-  def get_estimate
-    @estimate = @current_rent + @current_rent
-  end
-end
