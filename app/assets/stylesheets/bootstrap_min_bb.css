@@ -361,7 +361,8 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    min-height: 100px;
+    max-height: 600px;
+    min-height: 400px;
 }
 
 .img-rounded {
@@ -560,8 +561,10 @@ cite {
     text-align: left
 }
 
-.text-right {
-    text-align: right
+@media (min-width:900px) {
+    .text-right {
+        text-align: right
+    }
 }
 
 .text-center {
@@ -5519,7 +5522,7 @@ a.thumbnail.active {
     margin-bottom: -1px;
     background-color: #fff;
     border: 1px solid #ddd;
-    height:6em;
+    height:8em;
 }
 
 .list-group-item:first-child {
@@ -6639,6 +6642,9 @@ button.close {
     background-color: #fff
 }
 
+/*BEGIN CAROUSEL FOR LARGE SCREENS*/
+@media (min-width:900px) {
+
 .carousel-caption {
     position: absolute;
     left: 15%;
@@ -6649,14 +6655,16 @@ button.close {
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
 .carousel-caption .btn {
     text-shadow: none
 }
+}
+/*END CAROUSEL FOR LARGE SCREENS*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:300px) {
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-prev,
@@ -6667,13 +6675,22 @@ button.close {
         margin-left: -15px;
         font-size: 30px
     }
-    .carousel-caption {
-        left: 20%;
-        right: 20%;
-        padding-bottom: 30px
-    }
-    .carousel-indicators {
-        bottom: 20px
+    
+.carousel-caption {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 20px;
+    /*top: 30px;*/
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-indicators {
+    bottom: 20px
     }
 }
 
@@ -12335,8 +12352,9 @@ Copyright (c) 2014 Daniel Eden
 }
 
 /* Small Devices, Tablets */
-@media (min-width : 768px) and (max-width: 991px) {
-  
+@media (min-width : 300px;) and (max-width: 900px;) {
+/*@media (min-width : 768px) and (max-width: 991px) {
+*/  
   .navbar-header{
     width: 20%;
   }
@@ -12352,9 +12370,7 @@ Copyright (c) 2014 Daniel Eden
       height: 530px;
       margin-top: 70px;
   }
-  .carousel-caption {
-      top: 30%;
-  }
+
   .carousel-caption h2{
       font-size: 30px;
     line-height: 55px;
@@ -12374,6 +12390,7 @@ Copyright (c) 2014 Daniel Eden
   .carousel-caption p {
       font-size: 30px;
       line-height: 45px;
+      color:#ffffff;
   }
   .overlay-slide {
       height: 100%;
@@ -12453,17 +12470,23 @@ Copyright (c) 2014 Daniel Eden
 @media (max-width : 767px){
 
   .carousel-caption h3 {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 1.8em;
+    line-height: 1.4em;
+    text-shadow: none;
+    font-weight: 300;
+    margin: .1em 0px;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: none;
   }
   .carousel-caption p {
-      font-size: 35px;
-      line-height: 45px;
+      font-size: 1.5em;
+      line-height: 1em;
   }
   .carousel-caption h2{
-      font-size: 16px;
-    line-height: 34px;
-    width: 50%;
+      font-size: 2em;
+    line-height: 1.5em;
+    width: 100%;
   }
   .carousel-caption h2:after{
       content: "";
@@ -12494,11 +12517,7 @@ Copyright (c) 2014 Daniel Eden
   .overlay-slide {
       height: 100%;
   }
-  .carousel-caption p {
-      font-size: 12px;
-      line-height: 14px;
-      margin-top: 20px;
-  }
+
   .carousel-indicators li {
       width: 15px !important;
       height: 15px !important;
@@ -12518,13 +12537,13 @@ Copyright (c) 2014 Daniel Eden
       height: 30px;
   }
   .carousel-control.right {
-      right: 30px;
+      /*right: 30px;*/
   }
   
   /*header*/
 
   .feature_title {
-      width: 60%;
+      width: 90%;
       font-size: 30px;
   }
   .feature_content .btn-main{
@@ -12629,6 +12648,7 @@ Copyright (c) 2014 Daniel Eden
   }
 
 }
+/*end @media tag for small devices< 768px TAG*/
   
 /*STYLE */
 
@@ -12731,10 +12751,10 @@ body {
     position: relative;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, p {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #262626;
+    /*color: #262626;*/
 }
 
 h2 {
@@ -12780,10 +12800,10 @@ a {
     padding-bottom: 10px;
     color: #000;
     font-weight: 00;
-    width: 45%;
+    width: 75%;
     margin: 10px auto;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 1.6em;
+    line-height: 1.1em;
     text-transform: uppercase;
 }
 
@@ -12797,7 +12817,7 @@ a {
 .feature_sub {
     color: #000;
     font-size: 1.5em;
-    line-height: 25px;
+    line-height: 1em;
     font-weight: 400;
 }
 
@@ -12840,7 +12860,7 @@ a {
 }
 
 #how-it-works,#pricing_table,#about,#team,#blog,#contact {
-    padding: 80px 0px;
+    padding: 20px 0px;
 }
 
 /* Custom Basic styles
@@ -12994,8 +13014,10 @@ ul.navbar-nav > .active > a {
 /* Section Slider
 ========================================================= */
 
-/* Carousel Slider
+/* Carousel Slider FOR DESKTOP > 900px
 ============================================== */
+@media (min-width : 900px){
+
 #slider_part {
     height: 80%;
     width: 100%;
@@ -13006,8 +13028,8 @@ ul.navbar-nav > .active > a {
     top: 30%;
     margin-top: -70px;
     text-shadow: none!important;
-    left: 9%;
-    right: 10%;
+    left: 15%;
+    right: 15%;
     -webkit-transition: all.1s ease 0s;
     -o-transition: all.1s ease 0s;
     transition: all.1s ease 0s;
@@ -13017,9 +13039,9 @@ ul.navbar-nav > .active > a {
 .carousel-caption h3 {
     text-shadow: none;
     font-size: 3em;
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-weight: 300;
-    margin: 20px 0px;
+    margin: .1em 0px;
     color:#fff;
     transition-delay: .1s;
     -webkit-transition-delay: .1s;
@@ -13057,6 +13079,18 @@ ul.navbar-nav > .active > a {
     top: -3px;
 }
 
+}
+
+@media (min-width : 300px){
+
+.carousel .item {
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -ms-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    transition: opacity 300ms;
+    min-height: 400px;
+}
 .highlight_red {
   color:#FF709C;
   font-weight: 600;
@@ -13067,16 +13101,6 @@ ul.navbar-nav > .active > a {
   font-weight: 600;
   text-decoration: uppercase;
 }
-
-.carousel .item {
-    -webkit-transition: opacity 300ms;
-    -moz-transition: opacity 300ms;
-    -ms-transition: opacity 300ms;
-    -o-transition: opacity 300ms;
-    transition: opacity 300ms;
-    min-height: 400px;
-}
-
 .btn-featured {
     text-decoration: none;
     position: relative;
@@ -13130,10 +13154,10 @@ ul.navbar-nav > .active > a {
 
 .carousel-indicators {
     bottom: 100px;
-    width: 10%;
-    left: 45%;
+    width: 20%;
+    left: 40%;
     margin: 0 auto;
-    bottom: 30%;
+    bottom: 10%;
 }
 
 .carousel-indicators li {
@@ -13170,11 +13194,11 @@ ul.navbar-nav > .active > a {
 }
 
 .carousel-control.left {
-    left: -15px;
+    left: -10px;
 }
 
 .carousel-control.right {
-    right: 0px;
+    right: 25px;
 }
 
 .carousel-control.left {
@@ -13194,7 +13218,7 @@ ul.navbar-nav > .active > a {
 }
 
 .overlay-slide img {
-    opacity: .6;
+    opacity: .8;
     width: 100%;
     height: auto;
 }
@@ -13269,8 +13293,8 @@ ul.navbar-nav > .active > a {
 }
 
 .feature_content p {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.2em;
+    line-height: 1.1em;
 }
 
 .feature_content a {
@@ -13282,6 +13306,10 @@ ul.navbar-nav > .active > a {
 .feature_content a:hover {
     text-decoration: none;
 }
+
+}
+
+/*END DESKTOP SLIDER SECTION @media > 900px*/
 
 /* Portfolio Area
 =========================================== 
@@ -13918,6 +13946,19 @@ figcaption .links a {
     font-weight: 500!important;
 }
 
+.single_table {
+    background: #FFFFFF;
+    float: left;
+    -webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    left: 10%;
+    /*right: 5%;*/
+    position: relative;
+}
+@media(min-width:900px) {
+}
 .single_table {
     background: #FFFFFF;
     float: left;
@@ -15254,13 +15295,22 @@ textarea:hover {
     border-radius: 0px;
 }
 
-@media(min-width:768px) {
-}
 
 @media(min-width:768px) {
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+
+.mobile-padding-1{
+        position: relative;
+        top: 140px;
+    }
+
+.mobile-padding-2{
+        position: relative;
+        top: 70px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -15308,7 +15358,7 @@ p.faq-text{
 .green{
   color: green;
 }
-.how-button:visited,.btn-main a:visited{
+.btn-main a,.how-button:visited,.btn-main a:visited{
   color: #ffffff; 
 }
 .how-button:hover,.btn-main a:hover{
@@ -15389,8 +15439,11 @@ p.faq-text{
     left: 15%;
     position: absolute;
 }
+.btn-quote {
+    background-color: #4cae4c;
+}
 .steps-box {
-    height:330px;
+    height:24em;
     position: relative;
 }
 .footer-copyright {
@@ -15399,4 +15452,15 @@ p.faq-text{
 .checkbox{
     width:100px;
     top:0px;
+    right:0px;
+    display:inline-block;
+}
+.fl-l {
+    float:left;
+}
+.fl-r {
+    float: right;
+}
+.dropdown-selectors {
+    max-width: 90%
 }

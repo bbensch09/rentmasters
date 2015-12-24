@@ -86,7 +86,7 @@
   <div class="col-md-9 text-left">    <%= f.select :neighborhood, options_for_select(MarketRent.neighborhood_options, @quote.neighborhood) %> </div>
 
   <div class="col-md-3 text-right">    <%= f.label :condition, "What condition is the apartment in?", :class=>"edit-label" %> </div>
-  <div class="col-md-9 text-left">   <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition) %> </div>
+  <div class="col-md-9 text-left">   <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition), :class=>"dropdown-selectors" %> </div>
   <div class="col-md-3 text-right">    <%= f.label :current_rent, "How much do you currently pay in monthly rent?", :class=>"edit-label" %> </div>
   <div class="col-md-9 text-left">  <%= f.text_area :current_rent, size:"35x1" %> </div>
   
