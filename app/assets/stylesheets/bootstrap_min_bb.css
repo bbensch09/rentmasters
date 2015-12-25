@@ -12352,7 +12352,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 /* Small Devices, Tablets */
-@media (min-width : 300px;) and (max-width: 900px;) {
+@media (min-width : 300px) and (max-width: 900px) {
 /*@media (min-width : 768px) and (max-width: 991px) {
 */  
   .navbar-header{
