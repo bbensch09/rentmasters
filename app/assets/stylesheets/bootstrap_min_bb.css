@@ -6474,7 +6474,7 @@ button.close {
 }
 
 .carousel {
-    position: relative    
+    position: relative
 }
 
 .carousel-inner {
@@ -6675,7 +6675,7 @@ button.close {
         margin-left: -15px;
         font-size: 30px
     }
-    
+
 .carousel-caption {
     position: absolute;
     left: 5%;
@@ -11647,7 +11647,7 @@ Copyright (c) 2014 Daniel Eden
 
 
 /*OWL*/
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.3
  */
@@ -11685,7 +11685,7 @@ Copyright (c) 2014 Daniel Eden
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-  
+
 .owl-carousel .owl-item{
   float: left;
 }
@@ -11703,7 +11703,7 @@ Copyright (c) 2014 Daniel Eden
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -11720,7 +11720,7 @@ Copyright (c) 2014 Daniel Eden
 
 /*OWL THEME*/
 /*
-*   Owl Carousel Owl Demo Theme 
+*   Owl Carousel Owl Demo Theme
 * v1.3.3
 */
 
@@ -11817,11 +11817,11 @@ Copyright (c) 2014 Daniel Eden
   div.pp_default .pp_bottom .pp_left,
   div.pp_default .pp_bottom .pp_middle,
   div.pp_default .pp_bottom .pp_right { height: 13px; }
-  
+
   div.pp_default .pp_top .pp_left { background: url(../images/prettyPhoto/default/sprite.png) -78px -93px no-repeat; } /* Top left corner */
   div.pp_default .pp_top .pp_middle { background: url(../images/prettyPhoto/default/sprite_x.png) top left repeat-x; } /* Top pattern/color */
   div.pp_default .pp_top .pp_right { background: url(../images/prettyPhoto/default/sprite.png) -112px -93px no-repeat; } /* Top right corner */
-  
+
   div.pp_default .pp_content .ppt { color: #f8f8f8; }
   div.pp_default .pp_content_container .pp_left { background: url(../images/prettyPhoto/default/sprite_y.png) -7px 0 repeat-y; padding-left: 13px; }
   div.pp_default .pp_content_container .pp_right { background: url(../images/prettyPhoto/default/sprite_y.png) top right repeat-y; padding-right: 13px; }
@@ -11833,7 +11833,7 @@ Copyright (c) 2014 Daniel Eden
   div.pp_default .pp_contract { background: url(../images/prettyPhoto/default/sprite.png) 0 -84px no-repeat; cursor: pointer; width: 28px; height: 28px; } /* Contract button */
   div.pp_default .pp_contract:hover { background: url(../images/prettyPhoto/default/sprite.png) 0 -113px no-repeat; cursor: pointer; } /* Contract button hover */
   div.pp_default .pp_close { width: 30px; height: 30px; background: url(../images/prettyPhoto/default/sprite.png) 2px 1px no-repeat; cursor: pointer; } /* Close button */
-  div.pp_default #pp_full_res .pp_inline { color: #000; } 
+  div.pp_default #pp_full_res .pp_inline { color: #000; }
   div.pp_default .pp_gallery ul li a { background: url(../images/prettyPhoto/default/default_thumb.png) center center #f8f8f8; border:1px solid #aaa; }
   div.pp_default .pp_gallery ul li a:hover,
   div.pp_default .pp_gallery ul li.selected a { border-color: #fff; }
@@ -11851,7 +11851,7 @@ Copyright (c) 2014 Daniel Eden
   div.pp_default .pp_content_container .pp_details { margin-top: 5px; }
   div.pp_default .pp_nav { clear: none; height: 30px; width: 110px; position: relative; }
   div.pp_default .pp_nav .currentTextHolder{ font-family: Georgia; font-style: italic; color:#999; font-size: 11px; left: 75px; line-height: 25px; margin: 0; padding: 0 0 0 10px; position: absolute; top: 2px; }
-  
+
   div.pp_default .pp_close:hover, div.pp_default .pp_nav .pp_play:hover, div.pp_default .pp_nav .pp_pause:hover, div.pp_default .pp_arrow_next:hover, div.pp_default .pp_arrow_previous:hover { opacity:0.7; }
 
   div.pp_default .pp_description{ font-size: 11px; font-weight: bold; line-height: 14px; margin: 5px 50px 5px 0; }
@@ -11862,7 +11862,7 @@ Copyright (c) 2014 Daniel Eden
 
   div.pp_default .pp_loaderIcon { background: url(../images/prettyPhoto/default/loader.gif) center center no-repeat; } /* Loader icon */
 
-  
+
   /* ----------------------------------
     Light Rounded Theme
   ----------------------------------- */
@@ -11871,7 +11871,7 @@ Copyright (c) 2014 Daniel Eden
   div.light_rounded .pp_top .pp_left { background: url(../images/prettyPhoto/light_rounded/sprite.png) -88px -53px no-repeat; } /* Top left corner */
   div.light_rounded .pp_top .pp_middle { background: #fff; } /* Top pattern/color */
   div.light_rounded .pp_top .pp_right { background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -53px no-repeat; } /* Top right corner */
-  
+
   div.light_rounded .pp_content .ppt { color: #000; }
   div.light_rounded .pp_content_container .pp_left,
   div.light_rounded .pp_content_container .pp_right { background: #fff; }
@@ -11885,7 +11885,7 @@ Copyright (c) 2014 Daniel Eden
   div.light_rounded .pp_close { width: 75px; height: 22px; background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
   div.light_rounded .pp_details { position: relative; }
   div.light_rounded .pp_description { margin-right: 85px; }
-  div.light_rounded #pp_full_res .pp_inline { color: #000; } 
+  div.light_rounded #pp_full_res .pp_inline { color: #000; }
   div.light_rounded .pp_gallery a.pp_arrow_previous,
   div.light_rounded .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
   div.light_rounded .pp_nav .pp_play { background: url(../images/prettyPhoto/light_rounded/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
@@ -11901,15 +11901,15 @@ Copyright (c) 2014 Daniel Eden
   div.light_rounded .pp_bottom .pp_right { background: url(../images/prettyPhoto/light_rounded/sprite.png) -110px -80px no-repeat; } /* Bottom right corner */
 
   div.light_rounded .pp_loaderIcon { background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat; } /* Loader icon */
-  
+
   /* ----------------------------------
     Dark Rounded Theme
   ----------------------------------- */
-  
+
   div.dark_rounded .pp_top .pp_left { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -88px -53px no-repeat; } /* Top left corner */
   div.dark_rounded .pp_top .pp_middle { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat; } /* Top pattern/color */
   div.dark_rounded .pp_top .pp_right { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -53px no-repeat; } /* Top right corner */
-  
+
   div.dark_rounded .pp_content_container .pp_left { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat-y; } /* Left Content background */
   div.dark_rounded .pp_content_container .pp_right { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top right repeat-y; } /* Right Content background */
   div.dark_rounded .pp_content { background: url(../images/prettyPhoto/dark_rounded/contentPattern.png) top left repeat; } /* Content background */
@@ -11940,21 +11940,21 @@ Copyright (c) 2014 Daniel Eden
   div.dark_rounded .pp_bottom .pp_right { background: url(../images/prettyPhoto/dark_rounded/sprite.png) -110px -80px no-repeat; } /* Bottom right corner */
 
   div.dark_rounded .pp_loaderIcon { background: url(../images/prettyPhoto/dark_rounded/loader.gif) center center no-repeat; } /* Loader icon */
-  
-  
+
+
   /* ----------------------------------
     Dark Square Theme
   ----------------------------------- */
-  
+
   div.dark_square .pp_left ,
   div.dark_square .pp_middle,
   div.dark_square .pp_right,
   div.dark_square .pp_content { background: #000; }
-  
+
   div.dark_square .currentTextHolder { color: #c4c4c4; }
   div.dark_square .pp_description { color: #fff; }
   div.dark_square .pp_loaderIcon { background: url(../images/prettyPhoto/dark_square/loader.gif) center center no-repeat; } /* Loader icon */
-  
+
   div.dark_square .pp_expand { background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -26px no-repeat; cursor: pointer; } /* Expand button */
   div.dark_square .pp_expand:hover { background: url(../images/prettyPhoto/dark_square/sprite.png) -31px -47px no-repeat; cursor: pointer; } /* Expand button hover */
   div.dark_square .pp_contract { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -26px no-repeat; cursor: pointer; } /* Contract button */
@@ -11968,12 +11968,12 @@ Copyright (c) 2014 Daniel Eden
   div.dark_square .pp_nav { clear: none; }
   div.dark_square .pp_nav .pp_play { background: url(../images/prettyPhoto/dark_square/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
   div.dark_square .pp_nav .pp_pause { background: url(../images/prettyPhoto/dark_square/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
-  
+
   div.dark_square .pp_arrow_previous { background: url(../images/prettyPhoto/dark_square/sprite.png) 0 -71px no-repeat; } /* The previous arrow in the bottom nav */
     div.dark_square .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
   div.dark_square .pp_arrow_next { background: url(../images/prettyPhoto/dark_square/sprite.png) -22px -71px no-repeat; } /* The next arrow in the bottom nav */
     div.dark_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
-  
+
   div.dark_square .pp_next:hover { background: url(../images/prettyPhoto/dark_square/btnNext.png) center right  no-repeat; cursor: pointer; } /* Next button */
   div.dark_square .pp_previous:hover { background: url(../images/prettyPhoto/dark_square/btnPrevious.png) center left no-repeat; cursor: pointer; } /* Previous button */
 
@@ -11981,12 +11981,12 @@ Copyright (c) 2014 Daniel Eden
   /* ----------------------------------
     Light Square Theme
   ----------------------------------- */
-  
+
   div.light_square .pp_left ,
   div.light_square .pp_middle,
   div.light_square .pp_right,
   div.light_square .pp_content { background: #fff; }
-  
+
   div.light_square .pp_content .ppt { color: #000; }
   div.light_square .pp_expand { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -26px no-repeat; cursor: pointer; } /* Expand button */
   div.light_square .pp_expand:hover { background: url(../images/prettyPhoto/light_square/sprite.png) -31px -47px no-repeat; cursor: pointer; } /* Expand button hover */
@@ -12000,26 +12000,26 @@ Copyright (c) 2014 Daniel Eden
   div.light_square .pp_gallery a.pp_arrow_next { margin-top: 12px !important; }
   div.light_square .pp_nav .pp_play { background: url(../images/prettyPhoto/light_square/sprite.png) -1px -100px no-repeat; height: 15px; width: 14px; }
   div.light_square .pp_nav .pp_pause { background: url(../images/prettyPhoto/light_square/sprite.png) -24px -100px no-repeat; height: 15px; width: 14px; }
-  
+
   div.light_square .pp_arrow_previous { background: url(../images/prettyPhoto/light_square/sprite.png) 0 -71px no-repeat; } /* The previous arrow in the bottom nav */
     div.light_square .pp_arrow_previous.disabled { background-position: 0 -87px; cursor: default; }
   div.light_square .pp_arrow_next { background: url(../images/prettyPhoto/light_square/sprite.png) -22px -71px no-repeat; } /* The next arrow in the bottom nav */
     div.light_square .pp_arrow_next.disabled { background-position: -22px -87px; cursor: default; }
-  
+
   div.light_square .pp_next:hover { background: url(../images/prettyPhoto/light_square/btnNext.png) center right  no-repeat; cursor: pointer; } /* Next button */
   div.light_square .pp_previous:hover { background: url(../images/prettyPhoto/light_square/btnPrevious.png) center left no-repeat; cursor: pointer; } /* Previous button */
-  
+
   div.light_square .pp_loaderIcon { background: url(../images/prettyPhoto/light_rounded/loader.gif) center center no-repeat; } /* Loader icon */
 
 
   /* ----------------------------------
     Facebook style Theme
   ----------------------------------- */
-  
+
   div.facebook .pp_top .pp_left { background: url(../images/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat; } /* Top left corner */
   div.facebook .pp_top .pp_middle { background: url(../images/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x; } /* Top pattern/color */
   div.facebook .pp_top .pp_right { background: url(../images/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat; } /* Top right corner */
-  
+
   div.facebook .pp_content .ppt { color: #000; }
   div.facebook .pp_content_container .pp_left { background: url(../images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y; } /* Content background */
   div.facebook .pp_content_container .pp_right { background: url(../images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y; } /* Content background */
@@ -12031,9 +12031,9 @@ Copyright (c) 2014 Daniel Eden
   div.facebook .pp_close { width: 22px; height: 22px; background: url(../images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat; cursor: pointer; } /* Close button */
   div.facebook .pp_details { position: relative; }
   div.facebook .pp_description { margin: 0 37px 0 0; }
-  div.facebook #pp_full_res .pp_inline { color: #000; } 
+  div.facebook #pp_full_res .pp_inline { color: #000; }
   div.facebook .pp_loaderIcon { background: url(../images/prettyPhoto/facebook/loader.gif) center center no-repeat; } /* Loader icon */
-  
+
   div.facebook .pp_arrow_previous { background: url(../images/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat; height: 22px; margin-top: 0; width: 22px; } /* The previous arrow in the bottom nav */
     div.facebook .pp_arrow_previous.disabled { background-position: 0 -96px; cursor: default; }
   div.facebook .pp_arrow_next { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat; height: 22px; margin-top: 0; width: 22px; } /* The next arrow in the bottom nav */
@@ -12042,10 +12042,10 @@ Copyright (c) 2014 Daniel Eden
   div.facebook .pp_nav p { font-size: 15px; padding: 0 3px 0 4px; }
   div.facebook .pp_nav .pp_play { background: url(../images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat; height: 22px; width: 22px; }
   div.facebook .pp_nav .pp_pause { background: url(../images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat; height: 22px; width: 22px; }
-  
+
   div.facebook .pp_next:hover { background: url(../images/prettyPhoto/facebook/btnNext.png) center right no-repeat; cursor: pointer; } /* Next button */
   div.facebook .pp_previous:hover { background: url(../images/prettyPhoto/facebook/btnPrevious.png) center left no-repeat; cursor: pointer; } /* Previous button */
-  
+
   div.facebook .pp_bottom .pp_left { background: url(../images/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat; } /* Bottom left corner */
   div.facebook .pp_bottom .pp_middle { background: url(../images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x; } /* Bottom pattern/color */
   div.facebook .pp_bottom .pp_right { background: url(../images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat; } /* Bottom right corner */
@@ -12066,7 +12066,7 @@ Copyright (c) 2014 Daniel Eden
     width: 100%;
     z-index: 9500;
   }
-  
+
   div.pp_pic_holder {
     display: none;
     position: absolute;
@@ -12074,13 +12074,13 @@ Copyright (c) 2014 Daniel Eden
     z-index: 10000;
   }
 
-    
+
     .pp_top {
       height: 20px;
       position: relative;
     }
       * html .pp_top { padding: 0 20px; }
-    
+
       .pp_top .pp_left {
         height: 20px;
         left: 0;
@@ -12097,7 +12097,7 @@ Copyright (c) 2014 Daniel Eden
           left: 0;
           position: static;
         }
-      
+
       .pp_top .pp_right {
         height: 20px;
         left: auto;
@@ -12106,21 +12106,21 @@ Copyright (c) 2014 Daniel Eden
         top: 0;
         width: 20px;
       }
-    
+
     .pp_content { height: 40px; min-width: 40px; }
     * html .pp_content { width: 40px; }
-    
+
     .pp_fade { display: none; }
-    
+
     .pp_content_container {
       position: relative;
       text-align: left;
       width: 100%;
     }
-    
+
       .pp_content_container .pp_left { padding-left: 20px; }
       .pp_content_container .pp_right { padding-right: 20px; }
-    
+
       .pp_content_container .pp_details {
         float: left;
         margin: 10px 0 2px 0;
@@ -12129,30 +12129,30 @@ Copyright (c) 2014 Daniel Eden
           display: none;
           margin: 0;
         }
-        
+
         .pp_social { float: left; margin: 0; }
         .pp_social .facebook { float: left; margin-left: 5px; width: 55px; overflow: hidden; }
         .pp_social .twitter { float: left; }
-        
+
         .pp_nav {
           clear: right;
           float: left;
           margin: 3px 10px 0 0;
         }
-        
+
           .pp_nav p {
             float: left;
             margin: 2px 4px;
             white-space: nowrap;
           }
-          
+
           .pp_nav .pp_play,
           .pp_nav .pp_pause {
             float: left;
             margin-right: 4px;
             text-indent: -10000px;
           }
-        
+
           a.pp_arrow_previous,
           a.pp_arrow_next {
             display: block;
@@ -12163,14 +12163,14 @@ Copyright (c) 2014 Daniel Eden
             text-indent: -10000px;
             width: 14px;
           }
-    
+
     .pp_hoverContainer {
       position: absolute;
       top: 0;
       width: 100%;
       z-index: 2000;
     }
-    
+
     .pp_gallery {
       display: none;
       left: 50%;
@@ -12178,13 +12178,13 @@ Copyright (c) 2014 Daniel Eden
       position: absolute;
       z-index: 10000;
     }
-    
+
       .pp_gallery div {
         float: left;
         overflow: hidden;
         position: relative;
       }
-      
+
       .pp_gallery ul {
         float: left;
         height: 35px;
@@ -12193,7 +12193,7 @@ Copyright (c) 2014 Daniel Eden
         position: relative;
         white-space: nowrap;
       }
-      
+
       .pp_gallery ul a {
         border: 1px #000 solid;
         border: 1px rgba(0,0,0,0.5) solid;
@@ -12202,33 +12202,33 @@ Copyright (c) 2014 Daniel Eden
         height: 33px;
         overflow: hidden;
       }
-      
+
       .pp_gallery ul a:hover,
       .pp_gallery li.selected a { border-color: #fff; }
-      
+
       .pp_gallery ul a img { border: 0; }
-      
+
       .pp_gallery li {
         display: block;
         float: left;
         margin: 0 5px 0 0;
         padding: 0;
       }
-      
+
       .pp_gallery li.default a {
         background: url(../images/prettyPhoto/facebook/default_thumbnail.gif) 0 0 no-repeat;
         display: block;
         height: 33px;
         width: 50px;
       }
-      
+
       .pp_gallery li.default a img { display: none; }
-      
+
       .pp_gallery .pp_arrow_previous,
       .pp_gallery .pp_arrow_next {
         margin-top: 7px !important;
       }
-    
+
     a.pp_next {
       background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
       display: block;
@@ -12237,7 +12237,7 @@ Copyright (c) 2014 Daniel Eden
       text-indent: -10000px;
       width: 49%;
     }
-      
+
     a.pp_previous {
       background: url(../images/prettyPhoto/light_rounded/btnNext.png) 10000px 10000px no-repeat;
       display: block;
@@ -12246,12 +12246,12 @@ Copyright (c) 2014 Daniel Eden
       text-indent: -10000px;
       width: 49%;
     }
-    
+
     a.pp_expand,
     a.pp_contract {
       cursor: pointer;
       display: none;
-      height: 20px; 
+      height: 20px;
       position: absolute;
       right: 30px;
       text-indent: -10000px;
@@ -12259,20 +12259,20 @@ Copyright (c) 2014 Daniel Eden
       width: 20px;
       z-index: 20000;
     }
-      
+
     a.pp_close {
-      position: absolute; right: 0; top: 0; 
+      position: absolute; right: 0; top: 0;
       display: block;
       line-height:22px;
       text-indent: -10000px;
     }
-    
+
     .pp_bottom {
       height: 20px;
       position: relative;
     }
       * html .pp_bottom { padding: 0 20px; }
-      
+
       .pp_bottom .pp_left {
         height: 20px;
         left: 0;
@@ -12289,7 +12289,7 @@ Copyright (c) 2014 Daniel Eden
           left: 0;
           position: static;
         }
-        
+
       .pp_bottom .pp_right {
         height: 20px;
         left: auto;
@@ -12298,7 +12298,7 @@ Copyright (c) 2014 Daniel Eden
         top: 0;
         width: 20px;
       }
-    
+
     .pp_loaderIcon {
       display: block;
       height: 24px;
@@ -12308,17 +12308,17 @@ Copyright (c) 2014 Daniel Eden
       top: 50%;
       width: 24px;
     }
-    
+
     #pp_full_res {
       line-height: 1 !important;
     }
-    
+
       #pp_full_res .pp_inline {
         text-align: left;
       }
-      
+
         #pp_full_res .pp_inline p { margin: 0 0 15px 0; }
-  
+
     div.ppt {
       color: #fff;
       display: none;
@@ -12336,14 +12336,14 @@ Copyright (c) 2014 Daniel Eden
 
 /* Large Devices, Wide Screens */
 @media (min-width : 1200px) {
-  
+
 }
 
 
 /* Medium Devices, Desktops */
 @media (min-width : 992px) {
 
-  
+
   .single-portfolio figcaption .links a {
       float: left;
       margin: 0px 5px 0px 0px;
@@ -12354,7 +12354,7 @@ Copyright (c) 2014 Daniel Eden
 /* Small Devices, Tablets */
 @media (min-width : 300px) and (max-width: 900px) {
 /*@media (min-width : 768px) and (max-width: 991px) {
-*/  
+*/
   .navbar-header{
     width: 20%;
   }
@@ -12364,7 +12364,7 @@ Copyright (c) 2014 Daniel Eden
   ul.navbar-nav a {
       padding: 15px 0px 10px 10px;
   }
-  
+
   /*main Slider*/
   #slider_part {
       height: 530px;
@@ -12410,7 +12410,7 @@ Copyright (c) 2014 Daniel Eden
   }
 
   /*portfolio*/
-  
+
   .single-portfolio figcaption .links a {
       float: left;
       margin: 0px 5px 0px 0px;
@@ -12439,14 +12439,14 @@ Copyright (c) 2014 Daniel Eden
       max-width: 651px;
       padding: 0px 20px 0px 20px;
   }
-  
+
 
   /*backt top*/
   #back-top {
       right: 12px;
   }
 
-  
+
   /*-- Landing ---*/
 
   .hero-text{
@@ -12529,7 +12529,7 @@ Copyright (c) 2014 Daniel Eden
       left: 37%;
       bottom: 9%;
   }
-  
+
   .slides-control .carousel-control i {
       line-height: 15px;
       font-size: 20px;
@@ -12539,7 +12539,7 @@ Copyright (c) 2014 Daniel Eden
   .carousel-control.right {
       /*right: 30px;*/
   }
-  
+
   /*header*/
 
   .feature_title {
@@ -12549,12 +12549,12 @@ Copyright (c) 2014 Daniel Eden
   .feature_content .btn-main{
     margin-bottom: 40px;
   }
-  
+
   #how-it-works{
     padding-bottom: 0px;
     padding-top: 40px;
   }
-  
+
   /*count*/
   .facts-wrap {
       margin: 0px auto 65px;
@@ -12602,11 +12602,11 @@ Copyright (c) 2014 Daniel Eden
       margin: 0 auto;
       width: 50%;
   }
-  
+
   #client {
       padding: 0px 0px;
   }
-  
+
   /*blog*/
   #banner {
       height: 400px;
@@ -12641,7 +12641,7 @@ Copyright (c) 2014 Daniel Eden
   .footer_mid{
     float: left !important;
   }
-  
+
   /*backt top*/
   #back-top {
       right: 12px;
@@ -12649,7 +12649,7 @@ Copyright (c) 2014 Daniel Eden
 
 }
 /*end @media tag for small devices< 768px TAG*/
-  
+
 /*STYLE */
 
 /* Template Name: Cyprass Responsive HTML5/CSS3 Template
@@ -12690,7 +12690,7 @@ Version:1.1 */
 /* ----------------------------------------------------------------------------------- */
 /* CSS Reset & Clear
 /*----------------------------------------------------------------------------------- */
- 
+
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
 abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
@@ -13006,7 +13006,7 @@ ul.navbar-nav > .active > a {
     color: #fff;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus,
 .dropdown-menu>li.active>a {
     background: none !important;
 }
@@ -13122,7 +13122,7 @@ ul.navbar-nav > .active > a {
 }
 .btn-featured:hover {
     text-decoration: none;
-    position: relative;  
+    position: relative;
     border-radius: 2px;
     z-index: 1;
     font-weight: 600px;
@@ -13228,7 +13228,7 @@ ul.navbar-nav > .active > a {
 /*DO NOTE USE, ATTEMPTS TO FADE IN TRANSITION BUT LOOKS WORSE*/
 /*.carousel .item.active {
       left: 0 !important;
-        -webkit-transition: opacity 1s; 
+        -webkit-transition: opacity 1s;
          -moz-transition: opacity 1s;
            -o-transition: opacity 1s;
               transition: opacity 1s;
@@ -13312,7 +13312,7 @@ ul.navbar-nav > .active > a {
 /*END DESKTOP SLIDER SECTION @media > 900px*/
 
 /* Portfolio Area
-=========================================== 
+===========================================
 #portfolio {
     background: #FBFAF8;
 }
@@ -13662,7 +13662,7 @@ figcaption .links a {
     border-radius: 100% !important;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover, 
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: #222 !important;
 }
@@ -14332,12 +14332,12 @@ figcaption .links a {
     -o-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
-/*.customNavigation .fa-chevron-left, .customNavigation .fa-chevron-right{ 
-   
-    background: #444; 
+/*.customNavigation .fa-chevron-left, .customNavigation .fa-chevron-right{
+
+    background: #444;
     color: #fff;
 }
-.customNavigation .fa-chevron-left:hover, .customNavigation .fa-chevron-right:hover{ 
+.customNavigation .fa-chevron-left:hover, .customNavigation .fa-chevron-right:hover{
      background: #4593DE;
     color: #fff;
 }*/
@@ -14390,7 +14390,7 @@ figcaption .links a {
     width: 150px;
     height: 50px;
 }
-/*.client_logo img:hover{ 
+/*.client_logo img:hover{
     border: 1px solid #4593DE;
 }*/
 
@@ -14668,7 +14668,7 @@ textarea:hover {
     margin: 25px 0px;
 }
 
-/* Back To Top Button 
+/* Back To Top Button
 ======================================*/
 
 #back-top {
@@ -15353,19 +15353,19 @@ p.faq-text{
   color: black;
 }
 .yellow{
-  color: #f2c215;
+  color: #FFBF00;
 }
 .green{
   color: green;
 }
 .btn-main a,.how-button:visited,.btn-main a:visited{
-  color: #ffffff; 
+  color: #ffffff;
 }
 .how-button:hover,.btn-main a:hover{
-  color: #333; 
+  color: #333;
   }
 .how-button{
-  color: #ffffff; 
+  color: #ffffff;
 }
 .how-button:hover{
   color: #000000;
@@ -15426,7 +15426,7 @@ p.faq-text{
   font-size: 1.1em;
 }
 .estimate-inputs {
-  list-style-type: circle; 
+  list-style-type: circle;
 }
 .disclaimer {
   font-style: italic;
