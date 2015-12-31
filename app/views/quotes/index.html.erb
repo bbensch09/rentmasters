@@ -1,6 +1,4 @@
 
-
-
 <h1>Archived Quotes - RentMasters </h1>
 
   <% @quotes = Quote.order('id DESC') %>
@@ -14,10 +12,10 @@
       <!-- <button class="button"> <%= link_to 'View the quote', quote_path(quote) %> </button> -->
 
       <div>
-<!--         <div class="edit-button">
-          %= link_to 'Edit', edit_quote_path(quote), :class=> "link-b" %>
+        <div class="edit-button">
+          <%= link_to 'View Estimate', quote_path(quote), :class=> "link-b" %>
           </div>
- -->        <div class="delete-button">
+        <div class="delete-button">
           <%= link_to 'Delete', quote_path(quote), :class=> "link-b",
               method: :delete,
               data: { confirm: 'Are you sure?' } %></div>
