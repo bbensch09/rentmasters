@@ -51,6 +51,10 @@ class QuotesController < ApplicationController
     render '404'
   end
 
+  def thank_you
+    render 'thank_you'
+  end
+
   private
   # Anytime new fields are added to the model, they must be included here in order to be passed through the URL as params
   def quote_params

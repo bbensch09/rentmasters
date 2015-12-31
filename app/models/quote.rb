@@ -41,18 +41,18 @@ attr_reader :raw_market_avg, :error_message
 
   def get_condition
     case self.condition
-    when 'On-par with a typical SF apartment.'
+    when 'On-par with a typical SF apartment'
       @condition_multiplier =  1
-    when 'Much nicer than a typical apartment (new appliance, looks/feels recently renovated).'
+    when 'Much nicer than average (looks/feels recently renovated)'
       @condition_multiplier = 1.1
-    when 'Worse condition than a typical SF apartment (moldy bathrooms, old/broken appliances, needs lots of repairs).'
+    when 'Worse condition than average (mold, broken appliances, etc.)'
       @condition_multiplier = 0.9
     else @condition_multiplier = 1
     end
   end
 
   def self.condition_options
-    @condition_options = ['On-par with a typical SF apartment.','Much nicer than a typical apartment (new appliance, looks/feels recently renovated).','Worse condition than a typical SF apartment (moldy bathrooms, old/broken appliances, needs lots of repairs).']
+    @condition_options = ['On-par with a typical SF apartment','Much nicer than average (looks/feels recently renovated)','Worse condition than average (mold, broken appliances, etc.)']
   end
 
 end
