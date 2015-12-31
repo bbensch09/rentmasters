@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/privacy_policy' => 'welcome#privacy_policy'
   get '/terms_of_service' => 'welcome#terms_of_service'
   get '/market_rents' => 'market_rents#index'
+  get '/quotes' => 'quotes#404' #serve custom 404 if user removes quote id
+  get '/quotes-admin-index-5567' => 'quotes#index' #insecure random URL for BB's admin access
 
   resources :quotes
   resources :market_rents do

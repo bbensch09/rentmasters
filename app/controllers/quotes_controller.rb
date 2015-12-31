@@ -3,6 +3,7 @@ class QuotesController < ApplicationController
 
   def index
     @quotes = Quote.all
+    render 'index'
   end
 
   def new
@@ -44,6 +45,10 @@ class QuotesController < ApplicationController
     @quote = Quote.find(params[:id])
     @quote.destroy
     redirect_to quotes_path
+  end
+
+  def custom_404
+    render '404'
   end
 
   private

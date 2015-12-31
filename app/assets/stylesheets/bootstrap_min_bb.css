@@ -12764,7 +12764,6 @@ h2 {
 h3 {
     font-size: 40px;
     font-weight: 400;
-    text-transform: uppercase;
     line-height: 60px;
 }
 
@@ -13046,7 +13045,6 @@ ul.navbar-nav > .active > a {
     transition-delay: .1s;
     -webkit-transition-delay: .1s;
     -o-transition-delay: .1s;
-    text-transform: capitalize!important;
 }
 
 .carousel-caption p {
@@ -15348,6 +15346,11 @@ p.faq-text{
   font-size: 1.2em;
   color: black;
 }
+p.about-text{
+  font-size: 1.4em;
+  color: black;
+  line-height: 1.5em;
+}
 .faq-list {
   font-size: 1em;
   color: black;
@@ -15464,4 +15467,7 @@ p.faq-text{
 }
 .dropdown-selectors {
     max-width: 90%
+}
+.white-bg {
+    background-color: #ffffff;
 }
