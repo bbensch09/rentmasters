@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get '/quotes-admin-index-5567' => 'quotes#index' #insecure random URL for BB's admin access
   get '/quotes/thank_you' => 'quotes#thank_you'
 
+  # get '/session-viewer' do 
+  #   session.inspect
+  # end
+
   resources :quotes
   resources :market_rents do
     collection { post :import}
