@@ -1,14 +1,28 @@
 class Quote < ActiveRecord::Base
 
 belongs_to :market_rent
+before_validation :create_slug
 
-validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :condition, :current_rent,
+validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :condition, :current_rent, :slug,
   presence: true
 
-attr_accessor :estimate, :low_range, :high_range, :condition_multiplier
+attr_accessor :estimate, :low_range, :high_range, :condition_multiplier#, :slug
 attr_reader :raw_market_avg, :error_message
 
-  def get_range
+  def to_param
+    slug
+  end
+
+  def create_slug
+    custom_slug = bedrooms + "_" + current_rent.to_s + neighborhood.downcase.gsub(" / ","_").gsub(" ","_") + "_" + condition.downcase.gsub(" ","_").gsub(",","_")
+    write_attribute(:slug, custom_slug)
+  end
+
+  def sample
+    @score = 1
+  end
+
+  def get_range #this must run silently in order to surface errors if we don't have a reliable comp.
     get_estimate
     @error_message = "Unfortunately we have insufficient market data to provide a reliable estimate for your apartment. Please contact us at rentmasters.sf@gmail.com for more information."
     return @error_message if self.estimate.nil? || self.estimate < 0
@@ -18,7 +32,6 @@ attr_reader :raw_market_avg, :error_message
   end
 
   def get_estimate
-      # self.estimate = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
       get_condition
       raw_market_rent = MarketRent.where(neighborhood: self.neighborhood, bedrooms: self.bedrooms).average(:market_rent)
       return @error_message if raw_market_rent.nil?
@@ -43,16 +56,16 @@ attr_reader :raw_market_avg, :error_message
     case self.condition
     when 'On-par with a typical SF apartment'
       @condition_multiplier =  1
-    when 'Much nicer than average (looks/feels recently renovated)'
+    when 'Much nicer than average'
       @condition_multiplier = 1.1
-    when 'Worse condition than average (mold, broken appliances, etc.)'
+    when 'Worse condition than average (mold, broken appliances, etc)'
       @condition_multiplier = 0.9
     else @condition_multiplier = 1
     end
   end
 
   def self.condition_options
-    @condition_options = ['On-par with a typical SF apartment','Much nicer than average (looks/feels recently renovated)','Worse condition than average (mold, broken appliances, etc.)']
+    @condition_options = ['On-par with a typical SF apartment','Much nicer than average (looks/feels recently renovated)','Worse condition than average']
   end
 
 end

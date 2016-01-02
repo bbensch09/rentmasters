@@ -13,7 +13,10 @@ class QuotesController < ApplicationController
   def create
     #the first line below simply returns the URL parameters as a basic text hash
     @quote = Quote.new(quote_params)
+    puts "The params are #{quote_params}."
     if @quote.save
+      puts "The slug URL is #{@quote.slug}"
+      # render 'show'
       redirect_to @quote
       else
       render 'new'
@@ -21,11 +24,11 @@ class QuotesController < ApplicationController
   end
 
   def edit
-    @quote = Quote.find(params[:id])
+    @quote = Quote.find_by_slug(params[:id])
   end
 
   def update
-    @quote = Quote.find(params[:id])
+    @quote = Quote.find_by_slug(params[:id])
     if @quote.update(quote_params)
       redirect_to @quote
     else
@@ -34,7 +37,7 @@ class QuotesController < ApplicationController
   end
 
   def show
-    @quote = Quote.find(params[:id])
+    @quote = Quote.find_by_slug(params[:id])
   end
 
   def save_quote
@@ -42,7 +45,7 @@ class QuotesController < ApplicationController
 
 
   def destroy
-    @quote = Quote.find(params[:id])
+    @quote = Quote.find_by_slug(params[:id])
     @quote.destroy
     redirect_to quotes_path
   end
