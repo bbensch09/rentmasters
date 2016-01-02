@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
+#set version of ruby to match local machine
+ruby '2.0.0p353'
 
+#recommended by Heroku Dev Center
+gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
