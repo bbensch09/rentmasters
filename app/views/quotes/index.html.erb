@@ -9,16 +9,19 @@
         </h5>
       </div>
       
-      <!-- <button class="button"> <%= link_to 'View the quote', quote_path(quote) %> </button> -->
-
       <div>
         <div class="edit-button">
-          <%= link_to 'View Estimate', quote_path(quote), :class=> "link-b" %>
+          <!-- %= link_to 'View Estimate', quotes_slug_path(:slug => quote.slug), :class=> "link-b" %> -->
+          <%= link_to 'View Estimate', quote_path(:slug => quote.slug, :id => 0), :class=> "link-b" %>
+          <!-- %= link_to 'View Estimate', quote_path(quote), :class=> "link-b" %> -->
           </div>
+          <!-- DELETE BUTTON NOT WORKING AS OF JAN1-2016 -->
         <div class="delete-button">
-          <%= link_to 'Delete', quote_path(quote), :class=> "link-b",
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></div>
+          <%= link_to 'Delete', url_for('/quotes-admin-index-5567'), :class=> "link-b" #,
+              # method: :delete,
+              # data: { confirm: 'Are you sure?' } 
+              %>
+              </div>
       </div>
       <br>
       <hr class="cl-b">
