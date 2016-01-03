@@ -417,7 +417,6 @@ h6,
 .h5,
 .h6 {
     font-family: inherit;
-    font-weight: 500;
     line-height: 1.1;
     color: inherit
 }
@@ -12752,8 +12751,8 @@ body {
 
 h1,h2,h3,h4,h5,h6, p {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    /*color: #262626;*/
+/*    font-weight: 700;
+*/    /*color: #262626;*/
 }
 
 h2 {
@@ -13107,10 +13106,8 @@ ul.navbar-nav > .active > a {
     -webkit-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
-    /*background: transparent;*/
     border-radius: 2px;
     z-index: 1;
-    font-weight: 400px;
     font-size: 0.8em;
     line-height: 1em;
     padding: 5px 5px !important;
@@ -13119,6 +13116,24 @@ ul.navbar-nav > .active > a {
     background-color: #FF495F;
     color: white;
 }
+
+.cta-sfl {
+    text-decoration: none;
+    position: relative;
+    border-radius: 2px;
+    z-index: 1;
+    font-size: 0.8em;
+    line-height: 1em;
+    padding: 10px 10px !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #006caf;
+    color: white;
+}
+.cta-sfl:hover{
+    color: #4fbafc;
+}
+
 .estimate-subtitle {
     font-size: 0.8em;
     line-height: 1.1em;
@@ -13363,7 +13378,7 @@ ul.navbar-nav > .active > a {
     /*background: transparent;*/
     border-radius: 2px;
     z-index: 1;
-    font-weight: 600px;
+    font-weight: 800px;
     font-size: 2em;
     line-height: 2em;
     padding: 15px 40px !important;

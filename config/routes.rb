@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/quotes' => 'quotes#404' #serve custom 404 if user removes quote id
   get '/quotes-admin-index-5567' => 'quotes#index' #insecure random URL for BB's admin access
   get '/quotes/thank_you' => 'quotes#thank_you'
+  get '/login' => 'welcome#login'
 
   #ROUTE BELOW ALLOW THE QUOTE INDEXT PAGE LINKS TO WORK BUT THEN BREAKS THE NORMAL QUOTE SHOW
   #DEPRIORITIZING JAN1-2016
