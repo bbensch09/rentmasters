@@ -15613,3 +15613,11 @@ p.about-text{
 .slider2-hero {
     -webkit-text-stroke: 1px #000;
 }
+.errors {
+    color: red;
+    font-size: 1em;
+    font-style: italic;
+}
+.footer-links {
+    color: #555;
+}

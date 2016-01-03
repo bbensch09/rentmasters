@@ -3,8 +3,10 @@ class Quote < ActiveRecord::Base
 belongs_to :market_rent
 before_validation :create_slug
 
-validates  :first_name, :last_name, :email, :neighborhood, :bedrooms, :condition, :current_rent, :slug,
+validates  :first_name, :last_name, :neighborhood, :bedrooms, :condition, :slug,
   presence: true
+validates :email, uniqueness: { case_sensitive: false }
+validates :current_rent, numericality: { only_integer: true }
 
 attr_accessor :estimate, :low_range, :high_range, :condition_multiplier#, :slug
 attr_reader :raw_market_avg, :error_message

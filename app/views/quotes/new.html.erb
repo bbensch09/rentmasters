@@ -11,11 +11,11 @@
 
   <% if @quote.errors.any? %>
     <div id="error_explanation">
-      <h2>
+      <h3>
         <span class="errors">
           <%= pluralize(@quote.errors.count, "error") %>
-        </span> prohibited this quote from being saved:
-      </h2>
+         prohibited this quote from being saved: </span>
+      </h3>
       <ul>
         <% @quote.errors.full_messages.each do |msg| %>
           <li class="errors"><%= msg %></li>
