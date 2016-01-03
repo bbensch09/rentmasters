@@ -12384,8 +12384,8 @@ Copyright (c) 2014 Daniel Eden
       height: 80px;
   }
   .carousel-caption h3 {
-      font-size: 40px;
-      line-height: 30px;
+      font-size: 2em;
+      line-height: 1.5em;
   }
   .carousel-caption p {
       font-size: 30px;
@@ -13037,8 +13037,8 @@ ul.navbar-nav > .active > a {
 
 .carousel-caption h3 {
     text-shadow: none;
-    font-size: 1.9em;
-    line-height: 0.9em;
+    font-size: 2em;
+    line-height: 1.5em;
     font-weight: 300;
     margin: .1em 0px;
     color:#fff;
@@ -15609,4 +15609,7 @@ p.about-text{
 
 .white-bg {
     background-color: #ffffff;
+}
+.slider2-hero {
+    -webkit-text-stroke: 1px #000;
 }
