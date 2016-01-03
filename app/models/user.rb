@@ -1,10 +1,11 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
+
 	has_one :quote
 
 	validates :email, presence: true, uniqueness: {case_sensitive: false}
-	
+
 	has_secure_password
 
   # # users.password_hash in the database is a :string
