@@ -15606,8 +15606,9 @@ p.about-text{
 .footer-copyright {
     padding-left: 10px;
 }
-.checkbox{
-    width:100px;
+.qualify-checkboxes{
+    max-width:50%;
+    height: auto; 
     top:0px;
     right:0px;
     display:inline-block;
@@ -15649,4 +15650,9 @@ p.about-text{
   .form-control {
     color: $state-danger-text;
   }
+}
+@media (max-width:768px) {
+    .list-group-item {
+        height: 340px;
+    }
 }
