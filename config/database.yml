@@ -82,5 +82,5 @@ production:
   <<: *default
   database: rentmasters-alpha_production
   username: rentmasters-alpha
-  password: BB4rm109
-  # password: <%= ENV['RENTMASTERS-ALPHA_DATABASE_PASSWORD'] %>
+  # password: ********
+  password: <%= ENV['RENTMASTERS-ALPHA_DATABASE_PASSWORD'] %>

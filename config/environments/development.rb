@@ -29,19 +29,19 @@ Rails.application.configure do
   # enable_starttls_auto: true  }
 
   #GMAIL CONFIG (per http://usingname.space/2015/07/25/gmail-smtp-ruby-on-rails-actionmailer-and-you/)
-  config.action_mailer.default_url_options = { :host => 'stormy-temple-2489.herokuapp.com' }  
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }  
   config.action_mailer.delivery_method = :smtp  
   config.action_mailer.perform_deliveries = true  
-  config.action_mailer.raise_delivery_errors = false  
+  config.action_mailer.raise_delivery_errors = true  
   config.action_mailer.default :charset => "utf-8"  
   config.action_mailer.smtp_settings = {  
     address: "smtp.gmail.com",
     port: 587,
-    domain: "stormy-temple-2489.herokuapp.com",
+    domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "rentmasters.sf@gmail.com",
-    password: "********"
+    password: ENV["GMAIL_PASSWORD"]
   }
 
   # Print deprecation notices to the Rails logger.
