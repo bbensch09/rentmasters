@@ -16,10 +16,14 @@ class QuotesController < ApplicationController
     puts "The params are #{quote_params}."
     if @quote.save
       puts "The slug URL is #{@quote.slug}"
+      UserMailer.welcome_email(@quote).deliver_now
+      format.html { redirect_to(@quote, notice: 'A new estimate was successfully created.')}
+      format.json { render json: @quote, status: created, location: @quote }
       # render 'show'
       redirect_to @quote
       else
       render 'new'
+      #send email to admin saying an invalid email signup was attempted(?)
       end
   end
 
