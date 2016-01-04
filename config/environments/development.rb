@@ -14,7 +14,35 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  # config.action_mailer.raise_delivery_errors = true
+
+  #Gmail Action Mailer config per Rails Guides (not working)
+  # config.action_mailer.perform_deliveries = true
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  # address:              'smtp.gmail.com',
+  # port:                 587,
+  # domain:               'gmail.com',
+  # user_name:            'rentmasters.sf@gmail.com',
+  # password:             '********',
+  # authentication:       :plain,
+  # enable_starttls_auto: true  }
+
+  #GMAIL CONFIG (per http://usingname.space/2015/07/25/gmail-smtp-ruby-on-rails-actionmailer-and-you/)
+  config.action_mailer.default_url_options = { :host => 'stormy-temple-2489.herokuapp.com' }  
+  config.action_mailer.delivery_method = :smtp  
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = false  
+  config.action_mailer.default :charset => "utf-8"  
+  config.action_mailer.smtp_settings = {  
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "stormy-temple-2489.herokuapp.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["rentmasters.sf@gmail.com"],
+    password: ENV["BB4rm109"]
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
