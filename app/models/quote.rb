@@ -8,8 +8,8 @@ validates  :first_name, :last_name, :neighborhood, :bedrooms, :condition, :slug,
 validates :email, uniqueness: { case_sensitive: false }
 validates :current_rent, numericality: { only_integer: true }
 
-attr_accessor :estimate, :low_range, :high_range, :condition_multiplier#, :slug
-attr_reader :raw_market_avg, :error_message
+attr_accessor :estimate, :low_range, :high_range, :condition_multiplier
+attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
 
   def to_param
     slug
