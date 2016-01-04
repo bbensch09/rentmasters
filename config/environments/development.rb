@@ -40,8 +40,8 @@ Rails.application.configure do
     domain: "stormy-temple-2489.herokuapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["rentmasters.sf@gmail.com"],
-    password: ENV["BB4rm109"]
+    user_name: "rentmasters.sf@gmail.com",
+    password: "********"
   }
 
   # Print deprecation notices to the Rails logger.
