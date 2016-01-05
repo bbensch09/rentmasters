@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #set version of ruby to match local machine
-ruby '2.0.0'
+ruby '2.2.0'
 
 #recommended by Heroku Dev Center
 gem 'rails_12factor'
