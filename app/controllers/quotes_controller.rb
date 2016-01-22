@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
-    http_basic_authenticate_with name: "rentmasters", password: "rmbeta2015", except: #[:new_quote]
+    # http_basic_authenticate_with name: "rentmasters", password: "rmbeta2015", except: #[:new_quote]
 
     def index
       @quotes = Quote.all
@@ -28,7 +28,7 @@ class QuotesController < ApplicationController
       #send email to admin saying an invalid email signup was attempted(?)
     end
   end
-end 
+end
 
 def edit
   @quote = Quote.find_by_slug(params[:id])
@@ -76,5 +76,3 @@ private
   end
 
 end
-
-
