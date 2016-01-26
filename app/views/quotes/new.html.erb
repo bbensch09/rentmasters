@@ -1,9 +1,9 @@
 <div class="col-md-12 start-estimate text-dark">
-    <h1 class="text-dark more-spacing"> 
+    <h1 class="text-dark more-spacing">
         Know the true value of your <b> rent control.</b>
     </h1>
     <p class="font-medium text-white">
-       Simply enter your name and apartment details, and we’ll pull the latest market information about relocation payments in your neighborhood. Easier than getting Kelly Blue Book estimate. <br> <br>
+       Simply enter your name and apartment details, and we’ll pull the latest market information about relocation payments in your neighborhood. As easy as getting a Kelly Blue Book estimate for your car. <br> <br>
     </p>
 </div>
 
@@ -37,7 +37,7 @@
                   <span class="form-icon fa fa-envelope-o"></span>
               </div>
           </form>
-      </div> 
+      </div>
       </section>
       -->
 
@@ -62,7 +62,7 @@
   <div class="col-md-9 text-left">   <%= f.select :condition, options_for_select(Quote.condition_options, @quote.condition), :class=>"dropdown-selectors" %> </div>
   <div class="col-md-3 text-right">    <%= f.label :current_rent, "How much do you currently pay in monthly rent?", :class=>"edit-label" %> </div>
   <div class="col-md-9 text-left">  <%= f.text_area :current_rent, size:"35x1" %> </div>
-  
+
 
   <div class="col-md-12 text-center">
       <%= f.submit 'Request Your Estimate', :class=>"class=btn btn-featured font-cta" %>

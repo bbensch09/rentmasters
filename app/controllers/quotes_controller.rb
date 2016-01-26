@@ -1,5 +1,4 @@
 class QuotesController < ApplicationController
-    # http_basic_authenticate_with name: "rentmasters", password: "rmbeta2015", except: #[:new_quote]
 
     def index
       @quotes = Quote.all
