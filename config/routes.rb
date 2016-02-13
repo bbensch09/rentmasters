@@ -8,13 +8,14 @@ Rails.application.routes.draw do
   get '/quotes-admin-index-5567' => 'quotes#index' #insecure random URL for BB's admin access
   get '/quotes/thank_you' => 'quotes#thank_you'
   get '/login' => 'users#new'
+  get '/google49473385f9be7d38' => 'welcome#google49473385f9be7d38'
 
   #ROUTE BELOW ALLOW THE QUOTE INDEXT PAGE LINKS TO WORK BUT THEN BREAKS THE NORMAL QUOTE SHOW
   #DEPRIORITIZING JAN1-2016
   # get 'quotes/new' => 'quotes#new'
   # get 'quotes/:slug' => 'quotes#show', as: 'quotes_slug'
 
-  # get '/session-viewer' do 
+  # get '/session-viewer' do
   #   session.inspect
   # end
 
