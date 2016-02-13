@@ -3,6 +3,6 @@ class WelcomeController < ApplicationController
   end
 
   def google49473385f9be7d38
-    render 'google49473385f9be7d38' layout: false
+    render layout: false
   end
 end
