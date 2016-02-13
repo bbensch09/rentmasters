@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #set version of ruby to match local machine
-ruby '2.2.0'
+ruby '2.0.0'
 
 #recommended by Heroku Dev Center
 gem 'rails_12factor'
@@ -57,6 +57,5 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  
-end
 
+end
