@@ -30,7 +30,7 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
     return @error_message if self.estimate.nil? || self.estimate < 0
     low_range
     high_range
-    return " "    
+    return " "
   end
 
   def get_estimate
@@ -45,12 +45,12 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
   end
 
   def low_range
-    return "" if self.estimate.nil?
+    return "" if self.estimate.nil? || self.estimate < 0
     self.low_range = ((self.estimate * 0.75) / 1000 * 1000).round(0)
   end
 
   def high_range
-    return "" if self.estimate.nil?
+    return "" if self.estimate.nil?  || self.estimate < 0
     self.high_range = ((self.estimate * 1.25) / 1000 * 1000).round(0)
   end
 
