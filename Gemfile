@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 #Hirb for more readable console logging
-gem 'Hirb'
+gem 'hirb'
 #recommended by Heroku Dev Center
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
