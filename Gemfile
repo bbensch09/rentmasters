@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 #set version of ruby to match local machine
 ruby '2.0.0'
 
+#Hirb for more readable console logging
+gem 'hirb'
 #recommended by Heroku Dev Center
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
