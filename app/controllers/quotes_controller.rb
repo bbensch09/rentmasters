@@ -1,4 +1,5 @@
 class QuotesController < ApplicationController
+  before_action :authenticate_user! #, except: [:new]
 
     def index
       @quotes = Quote.all

@@ -24,23 +24,6 @@
     </div>
   <% end %>
 
-<!-- <section class="new-quote-form" class="col-md-9 left">
-      <div class="left_contact">
-          <form action="role">
-              <div class="form-level">
-                  <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
-                  %= f.text_area :first_name, size:"35x1", :name=>"name", :placeholder=>"Name", :id=>"name",  :value=>"", :type=>"text", :class=>"input-block"%>
-                  <span class="form-icon fa fa-user"></span>
-              </div>
-              <div class="form-level">
-                  <input name="email" placeholder="Email" id="mail" class="input-block" value="" type="email">
-                  <span class="form-icon fa fa-envelope-o"></span>
-              </div>
-          </form>
-      </div>
-      </section>
-      -->
-
 
   <div class="col-md-3 text-right">    <%= f.label :first_name, "First Name", :class=>"edit-label" %> </div>
   <div class="col-md-9 text-left">    <%= f.text_area :first_name, size:"35x1" %> </div>
@@ -49,7 +32,7 @@
   <div class="col-md-9 text-left">    <%= f.text_area :last_name, size:"35x1" %> </div>
 
   <div class="col-md-3 text-right">    <%= f.label :email, "Email", :class=>"edit-label" %> </div>
-  <div class="col-md-9 text-left">    <%= f.text_area :email, size:"35x1" %> </div>
+  <div class="col-md-9 text-left">    <%= f.text_area :email, size:"35x1", value:current_user.email %> </div>
 
   <div class="col-md-3 text-right">    <%= f.label :bedrooms, "Number of Bedrooms", :class=>"edit-label" %> </div>
   <div class="col-md-9 text-left">      <%= f.select :bedrooms, options_for_select(MarketRent.bedrooms_options, @quote.bedrooms) %> </div>

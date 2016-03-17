@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'welcome/index'
   get '/index' => 'welcome#index'
   get '/privacy_policy' => 'welcome#privacy_policy'
