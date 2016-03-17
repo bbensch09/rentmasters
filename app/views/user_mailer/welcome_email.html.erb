@@ -4,13 +4,16 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Welcome to RentMasters.co!</h1>
+
+    <h1>Welcome to RentMasters!</h1>
     <p>
-      You have successfully signed up to RentMasters.co,
-      your username is: <%= @user.email %>.<br>
+      Hi <%= @user.name %>,
     </p>
     <p>
-      To login to the site, to revisit your estimate at a future time, just follow this link: <a href="www.rentmasters.co/quotes/<%= @user.slug %>"> www.rentmasters.co/quotes/<%= @user.slug %> </a>.
+      Thank you for using our tool to estimate the true value of your rent-control.
+    </p>
+    <p>
+      If you would like to revisit your estimate at a future time, simply follow this link: <a href="www.rentmasters.co/quotes/<%= @user.slug %>"> www.rentmasters.co/quotes/<%= @user.slug %> </a>. Please be aware that we are constantly updating our model based on recent housing market data, so your estimate may change slightly over time.
     </p>
     <p>Thanks for joining and have a great day!</p>
   </body>
