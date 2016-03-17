@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.login{
+  float:left;
+  width: 40vw;
+  padding:3vw;
+  border-left: 1px solid gray;
+  vertical-align:
+}
+.signup{
+  float:left;
+  width: 40vw;
+  padding-left: 5vw;
+}
+.cl-b{
+  clear:both;
+}

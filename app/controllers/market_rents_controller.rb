@@ -1,5 +1,5 @@
 class MarketRentsController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "rmadmin", except: #[:new_quote]
+  http_basic_authenticate_with name: "admin", password: ENV["ADMIN_PASSWORD"], except: #[:new_quote]
 
   def import
    MarketRent.import(params[:file])
