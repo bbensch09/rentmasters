@@ -7,10 +7,10 @@
 
     <h1>Welcome to RentMasters!</h1>
     <p>
-      Hi <%= @user.name %>,
+      Hi <%= @user.first_name %>,
     </p>
     <p>
-      Thank you for using our tool to estimate the true value of your rent-control.
+      Thank you for using our tool to estimate the true value of your rent control.
     </p>
     <p>
       If you would like to revisit your estimate at a future time, simply follow this link: <a href="www.rentmasters.co/quotes/<%= @user.slug %>"> www.rentmasters.co/quotes/<%= @user.slug %> </a>. Please be aware that we are constantly updating our model based on recent housing market data, so your estimate may change slightly over time.
