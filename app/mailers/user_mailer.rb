@@ -6,6 +6,6 @@ class UserMailer < ApplicationMailer
 		#likewise, we are hacking a solution now where we pass in the quote object, and then refer to it as user, which is symantically confusing, but ultimately what we will want to do down the road.
 		@user = quote
 		@url  = 'http://www.rentmasters.co/quotes/'+@user.slug
-		mail(to: @user.email, subject: 'Welcome to Rent Masters')
+		mail(to: @user.email, subject: 'Your Rent Masters estimate is here')
 	end
 end
