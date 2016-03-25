@@ -18,7 +18,7 @@ def self.neighborhood_options
 end
 
 def self.bedrooms_options
-  @bedrooms_options = ['1br','2br','3br','4br','5br','6br']
+  @bedrooms_options = ['Studio','1br','2br','3br','4br']
 end
 
 end
