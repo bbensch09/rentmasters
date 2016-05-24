@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'rentmasters.sf@gmail.com',
-		cc: 'rentmasters.sf@gmail.com'
+  default from: 'info@rentmasters.co',
+		cc: 'info@rentmasters.co'
 
 
   layout 'mailer'
