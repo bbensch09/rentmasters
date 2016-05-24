@@ -2,9 +2,11 @@
    <div class="col-md-5 text-right font-medium text-white">
     Your Rent Masters estimate:
   </div>
-  <div class="col-md-7 text-left font-large text-white">
-   <%= @quote.get_range %>
+  <div class="col-md-7 text-left text-white quote-error-text">
+     <%= @quote.get_range %>
+  </div>
 
+  <div class="col-md-7 text-left font-large text-white">
 <% if @quote.estimate > 0 %>
    <%= number_to_currency(@quote.low_range, precision: 0) %> - <%= number_to_currency(@quote.high_range, precision: 0) %>
 <% end %>

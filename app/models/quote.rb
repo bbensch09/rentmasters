@@ -16,7 +16,7 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
   end
 
   def create_slug
-    custom_slug = bedrooms + "_" + current_rent.to_s + neighborhood.downcase.gsub(" / ","_").gsub(" ","_") + "_" + condition.downcase.gsub(" ","_").gsub(",","_")
+    custom_slug = bedrooms + "_" + current_rent.to_s + neighborhood.downcase.gsub(" / ","_").gsub(" ","_") + "_" + condition.downcase.gsub(" ","_").gsub(",","_").gsub("(","_").gsub(")","_")
     write_attribute(:slug, custom_slug)
   end
 
@@ -26,7 +26,7 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
 
   def get_range #this must run silently in order to surface errors if we don't have a reliable comp.
     get_estimate
-    @error_message = "Unfortunately we have insufficient market data to provide a reliable estimate for your apartment. Please contact us at rentmasters.sf@gmail.com for more information."
+    @error_message = "Unfortunately we cannot provide an estimate at this time. We either have insufficient data for your neighborhood, or your apartment may not be a good fit for a relocation agreement. Please contact info@rentmasters.co for more information."
     return @error_message if self.estimate.nil? || self.estimate < 0
     low_range
     high_range
@@ -67,7 +67,7 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
   end
 
   def self.condition_options
-    @condition_options = ['On-par with a typical SF apartment','Much nicer than average (looks/feels recently renovated)','Worse condition than average']
+    @condition_options = ['On-par with a typical SF apartment','Much nicer than average - feels recently renovated','Worse condition than average']
   end
 
 end
