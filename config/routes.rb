@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/quotes/thank_you' => 'quotes#thank_you'
   get '/login' => 'users#new'
   get '/google49473385f9be7d38' => 'welcome#google49473385f9be7d38'
+  delete '/market_rents/delete_all' => 'market_rents#delete_all'
 
   #ROUTE BELOW ALLOW THE QUOTE INDEXT PAGE LINKS TO WORK BUT THEN BREAKS THE NORMAL QUOTE SHOW
   #DEPRIORITIZING JAN1-2016

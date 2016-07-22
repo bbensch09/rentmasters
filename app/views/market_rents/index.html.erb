@@ -7,9 +7,10 @@
   <%= submit_tag "Import CSV" %>
 <% end %>
 
-<%= link_to 'Delete', :class=> "link-b",
-      method: :delete,
-      data: { confirm: 'Are you sure?' } %></div>
+<%= link_to 'Delete', '/market_rents/delete_all', :class=> "link-b",
+      method: :delete
+      # data: { confirm: 'Are you sure?' }
+      %></div>
 
 <% @market_rents = MarketRent.order('id DESC') %>
   <div class="main-section col-12">
