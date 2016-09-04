@@ -27,3 +27,9 @@
 .cl-b{
   clear:both;
 }
+.white-bg{
+      background: rgba(255, 255, 255, 0.7);
+}
+.black-text{
+        color: #000 !important;
+}

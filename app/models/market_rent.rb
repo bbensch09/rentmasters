@@ -11,6 +11,18 @@ def self.import(file)
   end
 end
 
+def self.sum
+  result = 0
+  array = MarketRent.select('market_rent')
+  array.each do |row|
+    result += row.market_rent
+  end
+  return result
+end
+
+def self.count(field)
+end
+
 def self.neighborhood_options
     # @neighborhood_options = ['SOMA / south beach','pacific heights']
     @neighborhood_options = MarketRent.uniq.pluck(:neighborhood)

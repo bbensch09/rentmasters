@@ -32,11 +32,11 @@ class MarketRentsController < ApplicationController
   end
 
 
-  def delete
+  def delete_all
     @market_rents = MarketRent.all
-    @market_rents.destroy
+    @market_rents.delete_all
     # redirect_to market_rents_path
-    render 'market_rents'
+    render 'index'
   end
 
   private
