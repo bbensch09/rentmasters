@@ -35,7 +35,9 @@ fbq('track', 'Lead');
   <div class="col-md-3"></div>
   <div class="col-md-9">
     <ul class="estimate-inputs list-default">
+     <% if current_user.email == "bbensch@gmail.com" %>
      <li>  <b> Your email:</b>  <%= @quote.email %> </li>
+     <% end %>
      <li>  <b> Your current rent:</b> $<%= @quote.current_rent %> </li>
      <li>  <b> Neighborhood:</b> <%= @quote.neighborhood %> </li>
      <li>  <b> Bedrooms: </b> <%= @quote.bedrooms %> </li>
