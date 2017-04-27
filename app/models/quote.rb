@@ -58,9 +58,9 @@ attr_reader :raw_market_avg, :error_message #, :first_name, :email #:slug
     case self.condition
     when 'On-par with a typical SF apartment'
       @condition_multiplier =  1
-    when 'Much nicer than average'
+    when 'Much nicer than average - feels recently renovated'
       @condition_multiplier = 1.1
-    when 'Worse condition than average (mold, broken appliances, etc)'
+    when 'Worse condition than average'
       @condition_multiplier = 0.9
     else @condition_multiplier = 1
     end
